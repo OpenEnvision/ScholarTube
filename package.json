@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./ && node scripts/publish-root.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify:metadata": "node scripts/verify-resource-metadata.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

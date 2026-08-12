@@ -1,10 +1,12 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
-import { CheckIcon, ChevronIcon, GlobeIcon, SearchIcon, SortIcon } from '../icons'
+import { CheckIcon, ChevronIcon, ClockIcon, DownloadIcon, GlobeIcon, PlatformIcon, SearchIcon, SortIcon } from '../icons'
+import { exportCsv, exportMarkdown } from '../export-utils'
 import { matchesSearch, sortResources } from '../resource-utils'
 import ResourceCard from './ResourceCard'
+import ResourceDetail from './ResourceDetail'
 
 const formats = ['All', 'Interview', 'Course', 'Talk']
-const focusAreas = ['All', 'World Model', 'Agent', 'Vision', 'Robotics']
+const focusAreas = ['All', 'World Model', 'Agent', 'Vision', 'Robotics', 'Other']
 
 const formatLabels = {
   All: 'All',
@@ -19,6 +21,7 @@ const focusLabels = {
   Agent: 'Agents',
   Vision: 'Vision',
   Robotics: 'Robotics',
+  Other: 'Other',
 }
 
 const languageOptions = [
@@ -33,6 +36,31 @@ const sortOptions = [
   { value: 'shortest', label: 'Shortest first' },
   { value: 'longest', label: 'Longest first' },
 ]
+
+const platformOptions = [
+  { value: 'All', label: 'All platforms' },
+  { value: 'YouTube', label: 'YouTube' },
+  { value: 'Bilibili', label: 'Bilibili' },
+]
+
+const durationOptions = [
+  { value: 'All', label: 'Any duration' },
+  { value: 'short', label: 'Under 30 min' },
+  { value: 'medium', label: '30–90 min' },
+  { value: 'long', label: 'Over 90 min' },
+]
+
+function initialOption(name, options, fallback = 'All') {
+  const value = new URLSearchParams(window.location.search).get(name)
+  return options.some((option) => option.value === value) ? value : fallback
+}
+
+function matchesDuration(resource, duration) {
+  if (duration === 'short') return resource.durationMinutes < 30
+  if (duration === 'medium') return resource.durationMinutes >= 30 && resource.durationMinutes <= 90
+  if (duration === 'long') return resource.durationMinutes > 90
+  return true
+}
 
 function FilterMenu({ label, icon: Icon, options, value, onChange }) {
   const [open, setOpen] = useState(false)
@@ -151,27 +179,47 @@ function FilterMenu({ label, icon: Icon, options, value, onChange }) {
 }
 
 export default function Library({ resources, query, setQuery, format, setFormat, focus, setFocus }) {
-  const [language, setLanguage] = useState('All')
-  const [sort, setSort] = useState('curated')
+  const [language, setLanguage] = useState(() => initialOption('language', languageOptions))
+  const [platform, setPlatform] = useState(() => initialOption('platform', platformOptions))
+  const [duration, setDuration] = useState(() => initialOption('duration', durationOptions))
+  const [sort, setSort] = useState(() => initialOption('sort', sortOptions, 'curated'))
   const [visible, setVisible] = useState(10)
+  const [selectedResource, setSelectedResource] = useState(null)
 
   const filtered = useMemo(() => {
     const matches = resources.filter((resource) => (
       (format === 'All' || resource.section === format) &&
       (focus === 'All' || resource.focusArea === focus) &&
       (language === 'All' || resource.language === language) &&
+      (platform === 'All' || resource.platform === platform) &&
+      matchesDuration(resource, duration) &&
       matchesSearch(resource, query)
     ))
     return sortResources(matches, sort)
-  }, [resources, format, focus, language, query, sort])
+  }, [resources, duration, format, focus, language, platform, query, sort])
 
-  useEffect(() => setVisible(10), [format, focus, language, query, sort])
+  useEffect(() => setVisible(10), [duration, format, focus, language, platform, query, sort])
+
+  useEffect(() => {
+    const url = new URL(window.location.href)
+    const values = { q: query, format, focus, language, platform, duration, sort }
+
+    Object.entries(values).forEach(([key, value]) => {
+      const isDefault = value === 'All' || (key === 'sort' && value === 'curated') || !value
+      if (isDefault) url.searchParams.delete(key)
+      else url.searchParams.set(key, value)
+    })
+
+    window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`)
+  }, [duration, format, focus, language, platform, query, sort])
 
   function resetFilters() {
     setQuery('')
     setFormat('All')
     setFocus('All')
     setLanguage('All')
+    setPlatform('All')
+    setDuration('All')
     setSort('curated')
   }
 
@@ -234,6 +282,20 @@ export default function Library({ resources, query, setQuery, format, setFormat,
                 onChange={setLanguage}
               />
               <FilterMenu
+                label="Platform"
+                icon={PlatformIcon}
+                options={platformOptions}
+                value={platform}
+                onChange={setPlatform}
+              />
+              <FilterMenu
+                label="Duration"
+                icon={ClockIcon}
+                options={durationOptions}
+                value={duration}
+                onChange={setDuration}
+              />
+              <FilterMenu
                 label="Sort resources"
                 icon={SortIcon}
                 options={sortOptions}
@@ -246,16 +308,24 @@ export default function Library({ resources, query, setQuery, format, setFormat,
 
         <div className="results-bar" aria-live="polite">
           <span>{filtered.length} {filtered.length === 1 ? 'resource' : 'resources'}</span>
-          {(query || format !== 'All' || focus !== 'All' || language !== 'All') && (
-            <button type="button" onClick={resetFilters}>Clear filters</button>
-          )}
+          <div className="results-actions">
+            {(query || format !== 'All' || focus !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All') && (
+              <button type="button" onClick={resetFilters}>Clear filters</button>
+            )}
+            <button type="button" onClick={() => exportMarkdown(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as Markdown`}>
+              <DownloadIcon /> Markdown
+            </button>
+            <button type="button" onClick={() => exportCsv(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as CSV`}>
+              <DownloadIcon /> CSV
+            </button>
+          </div>
         </div>
 
         {filtered.length ? (
           <>
-            <div className="resource-grid" key={`${language}-${sort}`}>
+            <div className="resource-grid" key={`${language}-${platform}-${duration}-${sort}`}>
               {filtered.slice(0, visible).map((resource, index) => (
-                <ResourceCard resource={resource} index={index} key={resource.id} />
+                <ResourceCard resource={resource} index={index} key={resource.id} onOpen={setSelectedResource} />
               ))}
             </div>
             {visible < filtered.length && (
@@ -273,6 +343,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
           </div>
         )}
       </div>
+      {selectedResource && <ResourceDetail resource={selectedResource} onClose={() => setSelectedResource(null)} />}
     </section>
   )
 }

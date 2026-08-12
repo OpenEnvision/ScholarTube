@@ -9,9 +9,10 @@ import Contribute from './components/Contribute'
 import Footer from './components/Footer'
 
 export default function App() {
-  const [query, setQuery] = useState('')
-  const [format, setFormat] = useState('All')
-  const [focus, setFocus] = useState('All')
+  const params = new URLSearchParams(window.location.search)
+  const [query, setQuery] = useState(() => params.get('q') || '')
+  const [format, setFormat] = useState(() => ['Interview', 'Course', 'Talk'].includes(params.get('format')) ? params.get('format') : 'All')
+  const [focus, setFocus] = useState(() => ['World Model', 'Agent', 'Vision', 'Robotics'].includes(params.get('focus')) ? params.get('focus') : 'All')
 
   const featured = useMemo(
     () => resources.find((resource) => resource.id === 'ST-008') ?? resources[0],
@@ -39,9 +40,9 @@ export default function App() {
           focus={focus}
           setFocus={setFocus}
         />
-        <Directions setFocus={setFocus} />
+        <Directions setFocus={setFocus} resources={resources} />
         <Curation />
-        <Contribute />
+        <Contribute resources={resources} />
       </main>
       <Footer />
     </>

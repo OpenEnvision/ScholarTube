@@ -92,3 +92,37 @@ export function ChevronIcon() {
     </svg>
   )
 }
+
+export function CloseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M6 6l12 12M18 6 6 18" />
+    </svg>
+  )
+}
+
+export function ClockIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </svg>
+  )
+}
+
+export function PlatformIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <rect x="3.5" y="6" width="17" height="12" rx="2" />
+      <path d="m10 9 5 3-5 3V9Z" />
+    </svg>
+  )
+}
+
+export function DownloadIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M12 4v11M7.5 11.5 12 16l4.5-4.5M5 20h14" />
+    </svg>
+  )
+}

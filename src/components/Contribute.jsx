@@ -1,14 +1,67 @@
 import { useState } from 'react'
-import { ArrowIcon, CheckIcon } from '../icons'
+import { ArrowIcon, CheckIcon, ExternalIcon } from '../icons'
 
-export default function Contribute() {
+const issueBaseUrl = 'https://github.com/OpenEnvision/ScholarTube/issues/new'
+
+function getResourceKey(value) {
+  try {
+    const parsed = new URL(value)
+    const hostname = parsed.hostname.replace(/^www\./, '')
+    if (hostname === 'youtu.be') return `youtube:${parsed.pathname.split('/').filter(Boolean)[0] || ''}`
+    if (hostname.endsWith('youtube.com')) return `youtube:${parsed.searchParams.get('v') || parsed.pathname}`
+    const bilibiliId = parsed.pathname.match(/\/(BV[a-zA-Z0-9]+)/)?.[1]
+    if (bilibiliId) return `bilibili:${bilibiliId}`
+    return `${hostname}${parsed.pathname}`.replace(/\/$/, '').toLowerCase()
+  } catch {
+    return value.trim().toLowerCase()
+  }
+}
+
+export default function Contribute({ resources }) {
   const [url, setUrl] = useState('')
   const [reason, setReason] = useState('')
-  const [prepared, setPrepared] = useState(false)
+  const [issueUrl, setIssueUrl] = useState('')
+  const [error, setError] = useState('')
 
   function handleSubmit(event) {
     event.preventDefault()
-    setPrepared(true)
+    const duplicate = resources.find((resource) => getResourceKey(resource.url) === getResourceKey(url))
+
+    if (duplicate) {
+      setIssueUrl('')
+      setError(`This source is already indexed as ${duplicate.id}: ${duplicate.title}`)
+      return
+    }
+
+    const body = [
+      '## Resource',
+      '',
+      `- URL: ${url.trim()}`,
+      '',
+      '## Why it belongs',
+      '',
+      reason.trim(),
+      '',
+      '## Review checklist',
+      '',
+      '- [ ] The source is publicly accessible',
+      '- [ ] Metadata and canonical host have been checked',
+      '- [ ] Technical value and durability have been reviewed',
+      '',
+      '_Submitted from the ScholarTube contribution form._',
+    ].join('\n')
+    const params = new URLSearchParams({
+      title: `[Resource submission] ${url.trim()}`,
+      body,
+    })
+
+    setError('')
+    setIssueUrl(`${issueBaseUrl}?${params.toString()}`)
+  }
+
+  function resetPrepared() {
+    setIssueUrl('')
+    setError('')
   }
 
   return (
@@ -17,7 +70,7 @@ export default function Contribute() {
         <div className="contribute-intro">
           <p className="section-kicker">Open index</p>
           <h2>A lecture worth preserving?</h2>
-          <p>Recommend a public interview, course, or talk with enough context for editorial review.</p>
+          <p>Recommend a public interview, course, or talk. Each submission becomes a trackable GitHub issue for editorial review.</p>
         </div>
 
         <form className="contribute-form" onSubmit={handleSubmit}>
@@ -27,7 +80,7 @@ export default function Contribute() {
               type="url"
               required
               value={url}
-              onChange={(event) => { setUrl(event.target.value); setPrepared(false) }}
+              onChange={(event) => { setUrl(event.target.value); resetPrepared() }}
               placeholder="https://youtube.com/..."
             />
           </label>
@@ -36,17 +89,22 @@ export default function Contribute() {
             <textarea
               required
               value={reason}
-              onChange={(event) => { setReason(event.target.value); setPrepared(false) }}
+              minLength={30}
+              onChange={(event) => { setReason(event.target.value); resetPrepared() }}
               placeholder="What will researchers learn?"
             />
           </label>
           <button className="button button--primary" type="submit">
-            {prepared ? <><CheckIcon /> Submission prepared</> : <>Prepare submission <ArrowIcon /></>}
+            {issueUrl ? <><CheckIcon /> Review ready</> : <>Check & prepare review <ArrowIcon /></>}
           </button>
-          {prepared && (
-            <p className="form-success" role="status">
-              Your recommendation is prepared locally. Connect a project issue tracker when ScholarTube is published to send it for review.
-            </p>
+          {error && <p className="form-error" role="alert">{error}</p>}
+          {issueUrl && (
+            <div className="submission-ready" role="status">
+              <p>Your submission passed the duplicate check. Open the issue, review it, and submit it to enter the editorial queue.</p>
+              <a className="button button--outline" href={issueUrl} target="_blank" rel="noreferrer">
+                Continue on GitHub <ExternalIcon />
+              </a>
+            </div>
           )}
         </form>
 
