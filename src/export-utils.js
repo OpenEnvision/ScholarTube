@@ -38,6 +38,7 @@ export function buildMarkdown(resources) {
       `- Source: [${resource.platform}](${resource.url})`,
       `- Speaker / channel: ${resource.speaker === 'To be added' ? resource.channel : resource.speaker} / ${resource.channel}`,
       `- Format: ${resource.section}`,
+      ...(resource.seriesTitle ? [`- Series: ${resource.seriesTitle} (#${resource.seriesOrder})`] : []),
       `- Topic: ${resource.focusArea === 'Other' ? resource.domain : resource.focusArea}`,
       `- Language: ${resource.language}`,
       `- Duration: ${formatDuration(resource.durationMinutes)}`,
@@ -57,7 +58,7 @@ export function exportMarkdown(resources) {
 
 export function buildCsv(resources) {
   const headers = [
-    'id', 'title', 'url', 'platform', 'format', 'speaker', 'channel', 'topic',
+    'id', 'title', 'url', 'platform', 'format', 'series', 'seriesOrder', 'speaker', 'channel', 'topic',
     'language', 'duration', 'publishedAt', 'lastVerifiedAt', 'recommendation', 'whyWatch',
   ]
   const rows = resources.map((resource) => {
@@ -68,6 +69,8 @@ export function buildCsv(resources) {
       resource.url,
       resource.platform,
       resource.section,
+      resource.seriesTitle,
+      resource.seriesOrder,
       resource.speaker === 'To be added' ? '' : resource.speaker,
       resource.channel,
       resource.focusArea === 'Other' ? resource.domain : resource.focusArea,

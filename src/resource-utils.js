@@ -32,6 +32,41 @@ export function sortResources(resources, sort) {
   })
 }
 
+export function groupCourseSeries(resources) {
+  const entries = []
+  const seriesEntries = new Map()
+
+  resources.forEach((resource) => {
+    if (resource.section !== 'Course' || !resource.seriesId) {
+      entries.push({ kind: 'resource', id: resource.id, resource })
+      return
+    }
+
+    let series = seriesEntries.get(resource.seriesId)
+    if (!series) {
+      series = {
+        kind: 'series',
+        id: `series:${resource.seriesId}`,
+        seriesId: resource.seriesId,
+        title: resource.seriesTitle,
+        resources: [],
+      }
+      seriesEntries.set(resource.seriesId, series)
+      entries.push(series)
+    }
+    series.resources.push(resource)
+  })
+
+  seriesEntries.forEach((series) => {
+    series.resources.sort((a, b) =>
+      (a.seriesOrder ?? Number.MAX_SAFE_INTEGER) - (b.seriesOrder ?? Number.MAX_SAFE_INTEGER) ||
+      a.title.localeCompare(b.title, 'en'),
+    )
+  })
+
+  return entries
+}
+
 export function matchesSearch(resource, query) {
   if (!query.trim()) return true
   const haystack = [
@@ -43,6 +78,7 @@ export function matchesSearch(resource, query) {
     resource.format,
     resource.language,
     resource.focusArea,
+    resource.seriesTitle,
   ]
     .filter(Boolean)
     .join(' ')

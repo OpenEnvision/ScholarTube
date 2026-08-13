@@ -1,7 +1,9 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { CheckIcon, ChevronIcon, ClockIcon, DownloadIcon, GlobeIcon, PlatformIcon, SearchIcon, SortIcon } from '../icons'
 import { exportCsv, exportMarkdown } from '../export-utils'
-import { matchesSearch, sortResources } from '../resource-utils'
+import { groupCourseSeries, matchesSearch, sortResources } from '../resource-utils'
+import CourseSeriesCard from './CourseSeriesCard'
+import CourseSeriesDetail from './CourseSeriesDetail'
 import ResourceCard from './ResourceCard'
 import ResourceDetail from './ResourceDetail'
 
@@ -185,6 +187,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
   const [sort, setSort] = useState(() => initialOption('sort', sortOptions, 'curated'))
   const [visible, setVisible] = useState(10)
   const [selectedResource, setSelectedResource] = useState(null)
+  const [selectedSeries, setSelectedSeries] = useState(null)
 
   const filtered = useMemo(() => {
     const matches = resources.filter((resource) => (
@@ -197,6 +200,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
     ))
     return sortResources(matches, sort)
   }, [resources, duration, format, focus, language, platform, query, sort])
+  const entries = useMemo(() => groupCourseSeries(filtered), [filtered])
 
   useEffect(() => setVisible(10), [duration, format, focus, language, platform, query, sort])
 
@@ -307,7 +311,10 @@ export default function Library({ resources, query, setQuery, format, setFormat,
         </div>
 
         <div className="results-bar" aria-live="polite">
-          <span>{filtered.length} {filtered.length === 1 ? 'resource' : 'resources'}</span>
+          <span>
+            {filtered.length} {filtered.length === 1 ? 'resource' : 'resources'}
+            {entries.length !== filtered.length && ` · ${entries.length} ${entries.length === 1 ? 'entry' : 'entries'} after course grouping`}
+          </span>
           <div className="results-actions">
             {(query || format !== 'All' || focus !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All') && (
               <button type="button" onClick={resetFilters}>Clear filters</button>
@@ -324,11 +331,13 @@ export default function Library({ resources, query, setQuery, format, setFormat,
         {filtered.length ? (
           <>
             <div className="resource-grid" key={`${language}-${platform}-${duration}-${sort}`}>
-              {filtered.slice(0, visible).map((resource, index) => (
-                <ResourceCard resource={resource} index={index} key={resource.id} onOpen={setSelectedResource} />
+              {entries.slice(0, visible).map((entry, index) => entry.kind === 'series' ? (
+                <CourseSeriesCard series={entry} index={index} key={entry.id} onOpen={setSelectedSeries} />
+              ) : (
+                <ResourceCard resource={entry.resource} index={index} key={entry.id} onOpen={setSelectedResource} />
               ))}
             </div>
-            {visible < filtered.length && (
+            {visible < entries.length && (
               <div className="load-more">
                 <button className="button button--outline" type="button" onClick={() => setVisible((value) => value + 10)}>
                   View more resources
@@ -344,6 +353,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
         )}
       </div>
       {selectedResource && <ResourceDetail resource={selectedResource} onClose={() => setSelectedResource(null)} />}
+      {selectedSeries && <CourseSeriesDetail series={selectedSeries} onClose={() => setSelectedSeries(null)} />}
     </section>
   )
 }

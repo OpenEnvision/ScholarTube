@@ -149,6 +149,11 @@ img { display: block; max-width: 100%; }
 .resource-footer { display: grid; grid-template-columns: minmax(0,1fr) auto auto; gap: 10px; align-items: center; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: 9px; }
 .resource-footer > span:first-child { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .resource-footer a svg { width: 17px; }
+.resource-footer .series-browse { border: 0; border-bottom: 1px solid; padding: 0 0 2px; background: transparent; color: var(--ink); font-family: var(--mono); font-size: 9px; cursor: pointer; }
+.resource-thumb--series { box-shadow: 5px 5px 0 #fff, 6px 6px 0 #c8c8c3, 10px 10px 0 #fff, 11px 11px 0 #deded9; }
+.series-card:hover .resource-thumb--series { box-shadow: 4px 4px 0 #fff, 5px 5px 0 var(--red), 8px 8px 0 #fff, 9px 9px 0 #bbb; }
+.series-count { position: absolute; top: 8px; left: 8px; padding: 5px 8px; border-radius: 3px; background: var(--red); color: #fff; font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.editorial-cover--series { background: linear-gradient(145deg, #102a43, #181818 70%); }
 .editorial-cover { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; background: #181818; color: #fff; }
 .editorial-cover::after { content: ''; position: absolute; width: 140px; height: 140px; right: -40px; bottom: -70px; border: 25px solid var(--red); border-radius: 50%; }
 .editorial-cover b { color: var(--red); font-family: var(--mono); font-size: 13px; }
@@ -179,6 +184,20 @@ img { display: block; max-width: 100%; }
 .resource-detail__facts dd { margin: 0; font-weight: 650; text-align: right; }
 .resource-detail__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .resource-detail__notice { margin: 16px 0 0; color: var(--muted); font-family: var(--mono); font-size: 9px; }
+.series-detail { width: min(1180px, 100%); }
+.series-detail__media { position: relative; }
+.series-detail__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.72), transparent 45%); pointer-events: none; }
+.series-detail__media-label { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 28px; display: flex; align-items: end; justify-content: space-between; color: #fff; }
+.series-detail__media-label span { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.series-detail__media-label strong { font-size: 24px; }
+.series-detail__episodes { margin-top: 34px; }
+.series-detail__episodes ol { margin: 12px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line-dark); }
+.series-detail__episodes li { display: grid; grid-template-columns: 38px minmax(0,1fr) auto; align-items: center; gap: 14px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.series-detail__number { color: var(--red); font-family: var(--mono); font-size: 10px; }
+.series-detail__episodes strong { display: block; font-size: 13px; line-height: 1.35; }
+.series-detail__episodes small { display: block; margin-top: 5px; color: var(--muted); font-family: var(--mono); font-size: 9px; }
+.series-detail__episodes a { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 9px; font-weight: 700; }
+.series-detail__episodes a svg { width: 15px; }
 
 .directions { padding-block: 110px; border-top: 1px solid var(--line); }
 .direction-list { margin-top: 54px; border-top: 1px solid var(--line-dark); }
@@ -316,6 +335,8 @@ img { display: block; max-width: 100%; }
   .resource-detail__media img { height: 230px; }
   .resource-detail__summary, .resource-detail__facts { grid-template-columns: 1fr; }
   .resource-detail__summary { gap: 22px; }
+  .series-detail__episodes li { grid-template-columns: 30px minmax(0,1fr); }
+  .series-detail__episodes a { grid-column: 2; }
   .footer-main { align-items: flex-start; flex-direction: column; padding-block: 60px; }
   .footer-links { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
   .footer-branding p { margin-left: 0; }
