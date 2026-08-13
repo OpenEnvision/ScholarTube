@@ -19,11 +19,11 @@ The [`data`](data) directory contains:
 
 ## Current snapshot
 
-- 558 direct video resources
-- 383 resources in the four priority areas
-- 425 YouTube resources
-- 133 Bilibili resources
-- 147 interviews, 201 courses, and 210 talks
+- 546 direct video resources
+- 371 resources in the four priority areas
+- 418 YouTube resources
+- 128 Bilibili resources
+- 147 interviews, 192 courses, and 207 talks
 
 Interface labels, taxonomy, and editorial metadata are in English. Original video titles, channel names, and personal names remain in their source language to preserve searchability and provenance.
 

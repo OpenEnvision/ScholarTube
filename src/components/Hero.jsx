@@ -18,10 +18,10 @@ export default function Hero({ featured }) {
             <a className="button button--text" href="#curation">How we curate</a>
           </div>
           <p className="hero-facts">
-            <span><b>558</b> verified resources</span>
+            <span><b>546</b> verified resources</span>
             <span><b>147</b> interviews</span>
-            <span><b>201</b> courses</span>
-            <span><b>210</b> talks</span>
+            <span><b>192</b> courses</span>
+            <span><b>207</b> talks</span>
           </p>
         </div>
 

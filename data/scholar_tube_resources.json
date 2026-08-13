@@ -8518,39 +8518,6 @@
     "section": "Course",
     "focusArea": "World Model",
     "domain": "World Models",
-    "keywords": "Embodied AI; Robotics; World Models; Large Language Models; Foundation Models; Industry Insights",
-    "language": "Chinese",
-    "title": "【中配】杨立昆力推的JEPA是什么 通俗讲解核心原理 - bycloud",
-    "speaker": "中配",
-    "channel": "黑纹白斑马",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 17,
-    "url": "https://www.bilibili.com/video/BV1gWopBsE6D",
-    "platform": "Bilibili",
-    "viewCount": 26578,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Discovered through public Bilibili search; title, creator, and accessibility verified through the official video endpoint.",
-    "videoId": "BV1gWopBsE6D",
-    "publishedAt": "2026-04-22",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": true,
-    "subtitleVerificationScope": "all 1 part",
-    "metadataVerifiedVia": "Bilibili public view/player APIs",
-    "metadataVerificationStatus": "Verified",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-260",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
     "keywords": "Embodied AI; Robotics; World Models",
     "language": "Chinese",
     "title": "[浅读论文]小鹏X-World__世界模型如何实现VLA2.0的闭环仿真?",
@@ -8580,7 +8547,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-261",
+    "id": "ST-260",
     "section": "Course",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -8613,106 +8580,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-262",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "Embodied AI; Robotics; World Models",
-    "language": "Chinese",
-    "title": "世界模型入门：LeWorldModel算法讲解 -- github 4k star的JEPA框架世界动作模型，1GB显存可运行",
-    "speaker": "To be added",
-    "channel": "尤里卡AI",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 28,
-    "url": "https://www.bilibili.com/video/BV19pT36rEsN",
-    "platform": "Bilibili",
-    "viewCount": 8515,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Discovered through public Bilibili search; title, creator, and accessibility verified through the official video endpoint.",
-    "videoId": "BV19pT36rEsN",
-    "publishedAt": "2026-06-28",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": true,
-    "subtitleVerificationScope": "all 1 part",
-    "metadataVerifiedVia": "Bilibili public view/player APIs",
-    "metadataVerificationStatus": "Verified",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-263",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "Embodied AI; Robotics; World Models",
-    "language": "Chinese",
-    "title": "Yann LeCun | 自监督学习、JEPA、世界模型和人工智能的未来",
-    "speaker": "To be added",
-    "channel": "AInsight",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 69,
-    "url": "https://www.bilibili.com/video/BV15txgzNEGu",
-    "platform": "Bilibili",
-    "viewCount": 3191,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Discovered through public Bilibili search; title, creator, and accessibility verified through the official video endpoint.",
-    "videoId": "BV15txgzNEGu",
-    "publishedAt": "2025-10-06",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": true,
-    "subtitleVerificationScope": "all 1 part",
-    "metadataVerifiedVia": "Bilibili public view/player APIs",
-    "metadataVerificationStatus": "Verified",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-264",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "Embodied AI; Robotics; World Models",
-    "language": "Chinese",
-    "title": "论文导读:  LeJEPA这篇文章到底说明了什么?",
-    "speaker": "To be added",
-    "channel": "被迫成为理工男",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 16,
-    "url": "https://www.bilibili.com/video/BV1diEc6GEM1",
-    "platform": "Bilibili",
-    "viewCount": 2751,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Discovered through public Bilibili search; title, creator, and accessibility verified through the official video endpoint.",
-    "videoId": "BV1diEc6GEM1",
-    "publishedAt": "2026-06-04",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": true,
-    "subtitleVerificationScope": "all 1 part",
-    "metadataVerifiedVia": "Bilibili public view/player APIs",
-    "metadataVerificationStatus": "Verified",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-265",
+    "id": "ST-261",
     "section": "Course",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -8745,7 +8613,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-266",
+    "id": "ST-262",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8778,7 +8646,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-267",
+    "id": "ST-263",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8811,7 +8679,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-268",
+    "id": "ST-264",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8844,7 +8712,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-269",
+    "id": "ST-265",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8877,7 +8745,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-270",
+    "id": "ST-266",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8910,7 +8778,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-271",
+    "id": "ST-267",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8943,7 +8811,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-272",
+    "id": "ST-268",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -8976,7 +8844,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-273",
+    "id": "ST-269",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9009,7 +8877,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-274",
+    "id": "ST-270",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9042,7 +8910,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-275",
+    "id": "ST-271",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9075,7 +8943,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-276",
+    "id": "ST-272",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9108,7 +8976,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-277",
+    "id": "ST-273",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9141,7 +9009,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-278",
+    "id": "ST-274",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9174,7 +9042,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-279",
+    "id": "ST-275",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9207,7 +9075,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-280",
+    "id": "ST-276",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9240,7 +9108,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-281",
+    "id": "ST-277",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -9273,7 +9141,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-282",
+    "id": "ST-278",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9306,7 +9174,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-283",
+    "id": "ST-279",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9339,7 +9207,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-284",
+    "id": "ST-280",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9372,7 +9240,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-285",
+    "id": "ST-281",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9405,7 +9273,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-286",
+    "id": "ST-282",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9438,7 +9306,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-287",
+    "id": "ST-283",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9471,7 +9339,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-288",
+    "id": "ST-284",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9504,7 +9372,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-289",
+    "id": "ST-285",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -9537,7 +9405,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-290",
+    "id": "ST-286",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -9570,7 +9438,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-291",
+    "id": "ST-287",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -9603,7 +9471,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-292",
+    "id": "ST-288",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -9636,40 +9504,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-293",
-    "section": "Talk",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "Embodied AI; Robotics; World Models",
-    "language": "Chinese",
-    "title": "VL-JEPA & VLWM（2026智源大会世界模型论坛）",
-    "speaker": "To be added",
-    "channel": "__陈德龙__",
-    "format": "Conference Talk / Forum",
-    "durationMinutes": 31,
-    "url": "https://www.bilibili.com/video/BV1xpTG6hE1d",
-    "platform": "Bilibili",
-    "viewCount": 4405,
-    "sourceTier": "B | University / Conference / Institution",
-    "recommendation": "Recommended",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Discovered through public Bilibili search; title, creator, and accessibility verified through the official video endpoint.",
-    "videoId": "BV1xpTG6hE1d",
-    "publishedAt": "2026-06-28",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": true,
-    "subtitleVerificationScope": "all 1 part",
-    "metadataVerifiedVia": "Bilibili public view/player APIs",
-    "metadataVerificationStatus": "Verified",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-294",
+    "id": "ST-289",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -9702,7 +9537,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-295",
+    "id": "ST-290",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -9735,7 +9570,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-296",
+    "id": "ST-291",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -9768,7 +9603,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-297",
+    "id": "ST-292",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9801,7 +9636,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-298",
+    "id": "ST-293",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9834,7 +9669,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-299",
+    "id": "ST-294",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9867,7 +9702,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-300",
+    "id": "ST-295",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9900,7 +9735,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-301",
+    "id": "ST-296",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9933,7 +9768,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-302",
+    "id": "ST-297",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9966,7 +9801,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-303",
+    "id": "ST-298",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -9999,7 +9834,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-304",
+    "id": "ST-299",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -10032,7 +9867,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-305",
+    "id": "ST-300",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10065,7 +9900,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-306",
+    "id": "ST-301",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10098,7 +9933,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-307",
+    "id": "ST-302",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10131,7 +9966,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-308",
+    "id": "ST-303",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10164,7 +9999,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-309",
+    "id": "ST-304",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10197,7 +10032,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-310",
+    "id": "ST-305",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10230,7 +10065,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-311",
+    "id": "ST-306",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10263,7 +10098,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-312",
+    "id": "ST-307",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10296,7 +10131,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-313",
+    "id": "ST-308",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10329,7 +10164,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-314",
+    "id": "ST-309",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10362,7 +10197,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-315",
+    "id": "ST-310",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10395,7 +10230,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-316",
+    "id": "ST-311",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10428,7 +10263,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-317",
+    "id": "ST-312",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10461,7 +10296,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-318",
+    "id": "ST-313",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10494,7 +10329,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-319",
+    "id": "ST-314",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10527,7 +10362,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-320",
+    "id": "ST-315",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10560,7 +10395,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-321",
+    "id": "ST-316",
     "section": "Interview",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -10593,7 +10428,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-322",
+    "id": "ST-317",
     "section": "Interview",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -10626,7 +10461,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-323",
+    "id": "ST-318",
     "section": "Interview",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -10659,7 +10494,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-324",
+    "id": "ST-319",
     "section": "Interview",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -10692,7 +10527,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-325",
+    "id": "ST-320",
     "section": "Interview",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10725,7 +10560,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-326",
+    "id": "ST-321",
     "section": "Interview",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10758,7 +10593,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-327",
+    "id": "ST-322",
     "section": "Interview",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -10791,7 +10626,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-328",
+    "id": "ST-323",
     "section": "Interview",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10824,7 +10659,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-329",
+    "id": "ST-324",
     "section": "Interview",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10857,7 +10692,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-330",
+    "id": "ST-325",
     "section": "Interview",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10890,7 +10725,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-331",
+    "id": "ST-326",
     "section": "Interview",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10923,7 +10758,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-332",
+    "id": "ST-327",
     "section": "Interview",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10956,7 +10791,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-333",
+    "id": "ST-328",
     "section": "Interview",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -10989,73 +10824,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-334",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "World Models",
-    "language": "English",
-    "title": "JEPA - A Path Towards Autonomous Machine Intelligence (Paper Explained)",
-    "speaker": "To be added",
-    "channel": "Yannic Kilcher",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 60,
-    "url": "https://www.youtube.com/watch?v=jSdHmImyUjk",
-    "platform": "YouTube",
-    "viewCount": 102262,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Targeted addition for the four priority areas; public YouTube result verified as accessible.",
-    "videoId": "jSdHmImyUjk",
-    "metadataVerificationStatus": "Partial",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAt": "2022-07-06",
-    "publishedAtVerified": true,
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "lastVerifiedAt": "2026-08-13"
-  },
-  {
-    "id": "ST-335",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "World Models",
-    "language": "English",
-    "title": "V-JEPA: Revisiting Feature Prediction for Learning Visual Representations from Video (Explained)",
-    "speaker": "To be added",
-    "channel": "Yannic Kilcher",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 50,
-    "url": "https://www.youtube.com/watch?v=7UkJPwz_N_0",
-    "platform": "YouTube",
-    "viewCount": 60670,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Targeted addition for the four priority areas; public YouTube result verified as accessible.",
-    "videoId": "7UkJPwz_N_0",
-    "metadataVerificationStatus": "Partial",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAt": "2024-02-19",
-    "publishedAtVerified": true,
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "lastVerifiedAt": "2026-08-13"
-  },
-  {
-    "id": "ST-336",
+    "id": "ST-329",
     "section": "Course",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11088,40 +10857,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-337",
-    "section": "Course",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "Agents; Multi-Agent Systems",
-    "language": "English",
-    "title": "What Is Yann LeCun Cooking? JEPA Explained Simply",
-    "speaker": "To be added",
-    "channel": "bycloud",
-    "format": "Open Course / Tutorial",
-    "durationMinutes": 20,
-    "url": "https://www.youtube.com/watch?v=oM4neOyZOi0",
-    "platform": "YouTube",
-    "viewCount": 134473,
-    "sourceTier": "A | Official / Original Creator / Organizer",
-    "recommendation": "Core",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Targeted addition for the four priority areas; public YouTube result verified as accessible.",
-    "videoId": "oM4neOyZOi0",
-    "metadataVerificationStatus": "Partial",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAt": "2026-04-20",
-    "publishedAtVerified": true,
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "lastVerifiedAt": "2026-08-13"
-  },
-  {
-    "id": "ST-338",
+    "id": "ST-330",
     "section": "Course",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11154,7 +10890,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-339",
+    "id": "ST-331",
     "section": "Course",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11187,7 +10923,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-340",
+    "id": "ST-332",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11220,7 +10956,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-341",
+    "id": "ST-333",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11253,7 +10989,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-342",
+    "id": "ST-334",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11286,7 +11022,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-343",
+    "id": "ST-335",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11319,7 +11055,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-344",
+    "id": "ST-336",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11352,7 +11088,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-345",
+    "id": "ST-337",
     "section": "Course",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11385,7 +11121,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-346",
+    "id": "ST-338",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -11418,7 +11154,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-347",
+    "id": "ST-339",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -11451,7 +11187,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-348",
+    "id": "ST-340",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -11484,7 +11220,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-349",
+    "id": "ST-341",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -11517,7 +11253,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-350",
+    "id": "ST-342",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -11550,7 +11286,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-351",
+    "id": "ST-343",
     "section": "Course",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -11583,7 +11319,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-352",
+    "id": "ST-344",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -11616,7 +11352,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-353",
+    "id": "ST-345",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -11649,7 +11385,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-354",
+    "id": "ST-346",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -11682,7 +11418,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-355",
+    "id": "ST-347",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -11715,7 +11451,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-356",
+    "id": "ST-348",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -11748,7 +11484,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-357",
+    "id": "ST-349",
     "section": "Course",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -11781,7 +11517,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-358",
+    "id": "ST-350",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11814,7 +11550,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-359",
+    "id": "ST-351",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11847,40 +11583,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-360",
-    "section": "Talk",
-    "focusArea": "World Model",
-    "domain": "World Models",
-    "keywords": "Embodied AI; Robotics; World Models",
-    "language": "English",
-    "title": "VL-JEPA Oral Presentation at Mila World Modeling Workshop",
-    "speaker": "To be added",
-    "channel": "Delong Chen",
-    "format": "Academic Talk",
-    "durationMinutes": 15,
-    "url": "https://www.youtube.com/watch?v=gEjnxEDI9DU",
-    "platform": "YouTube",
-    "viewCount": 661,
-    "sourceTier": "C | Community Selection",
-    "recommendation": "Reserve",
-    "status": "Verified",
-    "collectedOn": "2026-08-10",
-    "notes": "Targeted addition for the four priority areas; public YouTube result verified as accessible.",
-    "videoId": "gEjnxEDI9DU",
-    "metadataVerificationStatus": "Partial",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAt": "2026-02-07",
-    "publishedAtVerified": true,
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "lastVerifiedAt": "2026-08-13"
-  },
-  {
-    "id": "ST-361",
+    "id": "ST-352",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11913,7 +11616,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-362",
+    "id": "ST-353",
     "section": "Talk",
     "focusArea": "World Model",
     "domain": "World Models",
@@ -11946,7 +11649,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-363",
+    "id": "ST-354",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -11979,7 +11682,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-364",
+    "id": "ST-355",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -12012,7 +11715,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-365",
+    "id": "ST-356",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -12045,7 +11748,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-366",
+    "id": "ST-357",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -12078,7 +11781,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-367",
+    "id": "ST-358",
     "section": "Talk",
     "focusArea": "Agent",
     "domain": "Agents",
@@ -12111,7 +11814,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-368",
+    "id": "ST-359",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -12144,7 +11847,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-369",
+    "id": "ST-360",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -12177,7 +11880,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-370",
+    "id": "ST-361",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -12210,7 +11913,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-371",
+    "id": "ST-362",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -12243,7 +11946,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-372",
+    "id": "ST-363",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -12276,7 +11979,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-373",
+    "id": "ST-364",
     "section": "Talk",
     "focusArea": "Vision",
     "domain": "Vision",
@@ -12309,7 +12012,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-374",
+    "id": "ST-365",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -12342,7 +12045,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-375",
+    "id": "ST-366",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -12375,7 +12078,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-376",
+    "id": "ST-367",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -12408,7 +12111,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-377",
+    "id": "ST-368",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -12441,7 +12144,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-378",
+    "id": "ST-369",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -12474,7 +12177,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-379",
+    "id": "ST-370",
     "section": "Talk",
     "focusArea": "Robotics",
     "domain": "Robotics",
@@ -12507,7 +12210,7 @@
     "lastVerifiedAt": "2026-08-13"
   },
   {
-    "id": "ST-380",
+    "id": "ST-371",
     "section": "Interview",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12540,7 +12243,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-381",
+    "id": "ST-372",
     "section": "Interview",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12573,7 +12276,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-382",
+    "id": "ST-373",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12606,7 +12309,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-383",
+    "id": "ST-374",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12639,7 +12342,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-384",
+    "id": "ST-375",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12672,7 +12375,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-385",
+    "id": "ST-376",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12705,7 +12408,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-386",
+    "id": "ST-377",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12738,7 +12441,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-387",
+    "id": "ST-378",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12771,7 +12474,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-388",
+    "id": "ST-379",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12804,7 +12507,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-389",
+    "id": "ST-380",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12837,7 +12540,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-390",
+    "id": "ST-381",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12870,7 +12573,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-391",
+    "id": "ST-382",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12903,7 +12606,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-392",
+    "id": "ST-383",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -12936,7 +12639,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-393",
+    "id": "ST-384",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -12969,7 +12672,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-394",
+    "id": "ST-385",
     "section": "Interview",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13002,7 +12705,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-395",
+    "id": "ST-386",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13035,7 +12738,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-396",
+    "id": "ST-387",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13068,7 +12771,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-397",
+    "id": "ST-388",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13101,7 +12804,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-398",
+    "id": "ST-389",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13134,7 +12837,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-399",
+    "id": "ST-390",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13167,7 +12870,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-400",
+    "id": "ST-391",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13200,7 +12903,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-401",
+    "id": "ST-392",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13233,7 +12936,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-402",
+    "id": "ST-393",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13266,7 +12969,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-403",
+    "id": "ST-394",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13299,7 +13002,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-404",
+    "id": "ST-395",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13332,7 +13035,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-405",
+    "id": "ST-396",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13365,7 +13068,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-406",
+    "id": "ST-397",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13398,7 +13101,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-407",
+    "id": "ST-398",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13431,7 +13134,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-408",
+    "id": "ST-399",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13464,7 +13167,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-409",
+    "id": "ST-400",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13497,7 +13200,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-410",
+    "id": "ST-401",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13530,7 +13233,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-411",
+    "id": "ST-402",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13563,10 +13266,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-412",
+    "id": "ST-403",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "KEYNOTE David Ha",
     "speaker": "David Ha",
@@ -13596,7 +13299,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-413",
+    "id": "ST-404",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13629,7 +13332,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-414",
+    "id": "ST-405",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13662,7 +13365,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-415",
+    "id": "ST-406",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13695,7 +13398,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-416",
+    "id": "ST-407",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13728,7 +13431,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-417",
+    "id": "ST-408",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -13761,7 +13464,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-418",
+    "id": "ST-409",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13794,7 +13497,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-419",
+    "id": "ST-410",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13827,7 +13530,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-420",
+    "id": "ST-411",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -13860,7 +13563,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-421",
+    "id": "ST-412",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13893,7 +13596,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-422",
+    "id": "ST-413",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13926,7 +13629,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-423",
+    "id": "ST-414",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13959,7 +13662,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-424",
+    "id": "ST-415",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -13992,7 +13695,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-425",
+    "id": "ST-416",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14025,7 +13728,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-426",
+    "id": "ST-417",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14058,7 +13761,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-427",
+    "id": "ST-418",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14091,7 +13794,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-428",
+    "id": "ST-419",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14124,7 +13827,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-429",
+    "id": "ST-420",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14157,7 +13860,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-430",
+    "id": "ST-421",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14190,7 +13893,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-431",
+    "id": "ST-422",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14223,7 +13926,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-432",
+    "id": "ST-423",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14256,7 +13959,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-433",
+    "id": "ST-424",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14289,7 +13992,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-434",
+    "id": "ST-425",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14322,7 +14025,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-435",
+    "id": "ST-426",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14355,7 +14058,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-436",
+    "id": "ST-427",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14388,7 +14091,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-437",
+    "id": "ST-428",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14421,7 +14124,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-438",
+    "id": "ST-429",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14454,7 +14157,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-439",
+    "id": "ST-430",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14487,7 +14190,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-440",
+    "id": "ST-431",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14520,7 +14223,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-441",
+    "id": "ST-432",
     "section": "Interview",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14553,7 +14256,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-442",
+    "id": "ST-433",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14586,7 +14289,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-443",
+    "id": "ST-434",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14619,10 +14322,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-444",
+    "id": "ST-435",
     "section": "Course",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "TUM AI Lecture Series - Building generative world models: progress and challenges (Ruiqi Gao)",
     "speaker": "To be added",
@@ -14652,7 +14355,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-445",
+    "id": "ST-436",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14685,7 +14388,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-446",
+    "id": "ST-437",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14718,7 +14421,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-447",
+    "id": "ST-438",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14751,7 +14454,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-448",
+    "id": "ST-439",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14784,7 +14487,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-449",
+    "id": "ST-440",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14817,10 +14520,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-450",
+    "id": "ST-441",
     "section": "Course",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Lecture 20 Model-Based Reinforcement Learning -- CS287-FA19 Advanced Robotics at UC Berkeley",
     "speaker": "To be added",
@@ -14850,7 +14553,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-451",
+    "id": "ST-442",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -14883,7 +14586,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-452",
+    "id": "ST-443",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14916,7 +14619,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-453",
+    "id": "ST-444",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -14949,7 +14652,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-454",
+    "id": "ST-445",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -14982,7 +14685,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-455",
+    "id": "ST-446",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15015,7 +14718,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-456",
+    "id": "ST-447",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -15048,7 +14751,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-457",
+    "id": "ST-448",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15081,7 +14784,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-458",
+    "id": "ST-449",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15114,40 +14817,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-459",
-    "section": "Course",
-    "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
-    "language": "English",
-    "title": "Introduction to World Models: V-JEPA 2",
-    "speaker": "To be added",
-    "channel": "YanAITalk",
-    "format": "Course / Tutorial",
-    "durationMinutes": 44,
-    "url": "https://www.youtube.com/watch?v=LY_J9-7BjOc",
-    "platform": "YouTube",
-    "viewCount": 16036,
-    "sourceTier": "B | University / Conference / Institution",
-    "recommendation": "Recommended",
-    "status": "Verified",
-    "collectedOn": "2026-08-12",
-    "notes": "Curated in the targeted ScholarTube expansion; public metadata accessible and editorially reviewed.",
-    "videoId": "LY_J9-7BjOc",
-    "focusArea": "World Model",
-    "publishedAt": "2025-09-07",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "metadataVerificationStatus": "Partial",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-460",
+    "id": "ST-450",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15180,7 +14850,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-461",
+    "id": "ST-451",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15213,7 +14883,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-462",
+    "id": "ST-452",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15246,7 +14916,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-463",
+    "id": "ST-453",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15279,10 +14949,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-464",
+    "id": "ST-454",
     "section": "Course",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "CS885 Lecture 9: Model-based RL",
     "speaker": "To be added",
@@ -15312,7 +14982,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-465",
+    "id": "ST-455",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15345,7 +15015,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-466",
+    "id": "ST-456",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -15378,7 +15048,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-467",
+    "id": "ST-457",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15411,7 +15081,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-468",
+    "id": "ST-458",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15444,10 +15114,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-469",
+    "id": "ST-459",
     "section": "Course",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "World Models explained in 10min..",
     "speaker": "To be added",
@@ -15477,7 +15147,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-470",
+    "id": "ST-460",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15510,7 +15180,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-471",
+    "id": "ST-461",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15543,7 +15213,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-472",
+    "id": "ST-462",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15576,7 +15246,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-473",
+    "id": "ST-463",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15609,10 +15279,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-474",
+    "id": "ST-464",
     "section": "Course",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "MIT MAS.s60 - Fall 2025 | Spatial Intelligence | Guest Lecture by Neil Leach",
     "speaker": "To be added",
@@ -15642,43 +15312,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-475",
+    "id": "ST-465",
     "section": "Course",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
-    "language": "English",
-    "title": "I-JEPA Explained with a Single Batch Run",
-    "speaker": "To be added",
-    "channel": "Mashaan Alshammari",
-    "format": "Course / Tutorial",
-    "durationMinutes": 16,
-    "url": "https://www.youtube.com/watch?v=Cw8vKl-jD44",
-    "platform": "YouTube",
-    "viewCount": 7018,
-    "sourceTier": "B | University / Conference / Institution",
-    "recommendation": "Recommended",
-    "status": "Verified",
-    "collectedOn": "2026-08-12",
-    "notes": "Curated in the targeted ScholarTube expansion; public metadata accessible and editorially reviewed.",
-    "videoId": "Cw8vKl-jD44",
-    "focusArea": "World Model",
-    "publishedAt": "2025-06-16",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "metadataVerificationStatus": "Partial",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-476",
-    "section": "Course",
-    "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Lecture 11.3: World Models",
     "speaker": "To be added",
@@ -15708,7 +15345,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-477",
+    "id": "ST-466",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15741,7 +15378,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-478",
+    "id": "ST-467",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15774,7 +15411,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-479",
+    "id": "ST-468",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -15807,7 +15444,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-480",
+    "id": "ST-469",
     "section": "Interview",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15840,7 +15477,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-481",
+    "id": "ST-470",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -15873,7 +15510,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-482",
+    "id": "ST-471",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -15906,7 +15543,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-483",
+    "id": "ST-472",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -15939,10 +15576,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-484",
+    "id": "ST-473",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Yuandong Tian - Finding Good Representation for Search and Exploration in RL @ UCL DARK",
     "speaker": "Yuandong Tian",
@@ -15972,7 +15609,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-485",
+    "id": "ST-474",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16005,7 +15642,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-486",
+    "id": "ST-475",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16038,7 +15675,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-487",
+    "id": "ST-476",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16071,7 +15708,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-488",
+    "id": "ST-477",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16104,7 +15741,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-489",
+    "id": "ST-478",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16137,7 +15774,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-490",
+    "id": "ST-479",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16170,10 +15807,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-491",
+    "id": "ST-480",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Yann LeCun: World Models: Enabling the next AI revolution",
     "speaker": "Yann LeCun",
@@ -16203,43 +15840,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-492",
+    "id": "ST-481",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
-    "language": "English",
-    "title": "Yann LeCun | Self-Supervised Learning, JEPA, World Models, and the future of AI",
-    "speaker": "Yann LeCun",
-    "channel": "Harvard CMSA",
-    "format": "Academic Talk / Research Seminar",
-    "durationMinutes": 69,
-    "url": "https://www.youtube.com/watch?v=yUmDRxV0krg",
-    "platform": "YouTube",
-    "viewCount": 135275,
-    "sourceTier": "B | University / Conference / Institution",
-    "recommendation": "Recommended",
-    "status": "Verified",
-    "collectedOn": "2026-08-12",
-    "notes": "Curated in the targeted ScholarTube expansion; public metadata accessible and editorially reviewed.",
-    "videoId": "yUmDRxV0krg",
-    "focusArea": "World Model",
-    "publishedAt": "2025-09-29",
-    "subtitleLanguages": [],
-    "subtitleTracks": [],
-    "subtitlesVerified": false,
-    "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
-    "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
-    "metadataVerificationStatus": "Partial",
-    "lastVerifiedAt": "2026-08-13",
-    "lastVerificationAttemptAt": "2026-08-13",
-    "metadataVerificationError": "",
-    "publishedAtVerified": true
-  },
-  {
-    "id": "ST-493",
-    "section": "Talk",
-    "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Learning Compositional Models of the World with Yilun Du",
     "speaker": "Yilun Du",
@@ -16269,10 +15873,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-494",
+    "id": "ST-482",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Yilun Du: Embodied Decision Making with Compositional World Models | CVPR25 Robotics 101",
     "speaker": "Yilun Du",
@@ -16302,10 +15906,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-495",
+    "id": "ST-483",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Unsupervised Intelligent Agents",
     "speaker": "Danijar Hafner",
@@ -16335,10 +15939,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-496",
+    "id": "ST-484",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Danijar Hafner – General Infomax Agents through World Models – PRL 2021",
     "speaker": "Danijar Hafner",
@@ -16368,10 +15972,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-497",
+    "id": "ST-485",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Fei-Fei Li: Spatial Intelligence is the Next Frontier in AI",
     "speaker": "Fei-Fei Li",
@@ -16401,10 +16005,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-498",
+    "id": "ST-486",
     "section": "Interview",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "The Godmother of AI on jobs, robots & why world models are next | Dr. Fei-Fei Li",
     "speaker": "Fei-Fei Li",
@@ -16434,10 +16038,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-499",
+    "id": "ST-487",
     "section": "Interview",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "English",
     "title": "Research Retrospectives: An interview with David Ha, Co-founder and CEO of Sakana AI",
     "speaker": "David Ha",
@@ -16467,7 +16071,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-500",
+    "id": "ST-488",
     "section": "Course",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -16500,7 +16104,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-501",
+    "id": "ST-489",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16533,7 +16137,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-502",
+    "id": "ST-490",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16566,7 +16170,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-503",
+    "id": "ST-491",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16599,7 +16203,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-504",
+    "id": "ST-492",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16632,7 +16236,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-505",
+    "id": "ST-493",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16665,7 +16269,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-506",
+    "id": "ST-494",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -16698,7 +16302,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-507",
+    "id": "ST-495",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -16731,7 +16335,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-508",
+    "id": "ST-496",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -16764,7 +16368,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-509",
+    "id": "ST-497",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -16797,7 +16401,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-510",
+    "id": "ST-498",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -16830,7 +16434,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-511",
+    "id": "ST-499",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -16863,7 +16467,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-512",
+    "id": "ST-500",
     "section": "Interview",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -16896,7 +16500,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-513",
+    "id": "ST-501",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -16929,7 +16533,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-514",
+    "id": "ST-502",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -16962,7 +16566,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-515",
+    "id": "ST-503",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -16995,7 +16599,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-516",
+    "id": "ST-504",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -17028,7 +16632,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-517",
+    "id": "ST-505",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -17061,7 +16665,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-518",
+    "id": "ST-506",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -17094,7 +16698,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-519",
+    "id": "ST-507",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -17127,7 +16731,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-520",
+    "id": "ST-508",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Control",
@@ -17160,7 +16764,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-521",
+    "id": "ST-509",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17193,10 +16797,10 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-522",
+    "id": "ST-510",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
-    "keywords": "World Models / JEPA / Spatial Intelligence",
+    "keywords": "World Models / Spatial Intelligence",
     "language": "Chinese",
     "title": "田渊栋：表征学习的利用与理解",
     "speaker": "Yuandong Tian",
@@ -17226,7 +16830,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-523",
+    "id": "ST-511",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Computer Vision / 3D Vision / Representation Learning",
@@ -17259,7 +16863,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-524",
+    "id": "ST-512",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17292,7 +16896,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-525",
+    "id": "ST-513",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17325,7 +16929,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-526",
+    "id": "ST-514",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17358,7 +16962,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-527",
+    "id": "ST-515",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17391,7 +16995,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-528",
+    "id": "ST-516",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17424,7 +17028,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-529",
+    "id": "ST-517",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Agents / Reasoning / Tool Use",
@@ -17457,7 +17061,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-530",
+    "id": "ST-518",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Moonshot AI / Kimi",
@@ -17490,7 +17094,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-531",
+    "id": "ST-519",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Moonshot AI / Kimi",
@@ -17523,7 +17127,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-532",
+    "id": "ST-520",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / DeepSeek / High-Flyer",
@@ -17556,7 +17160,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-533",
+    "id": "ST-521",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / DeepSeek",
@@ -17589,7 +17193,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-534",
+    "id": "ST-522",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Alibaba Qwen",
@@ -17622,7 +17226,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-535",
+    "id": "ST-523",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Alibaba Qwen",
@@ -17655,7 +17259,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-536",
+    "id": "ST-524",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Alibaba Qwen",
@@ -17688,7 +17292,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-537",
+    "id": "ST-525",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Tencent Hunyuan",
@@ -17721,7 +17325,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-538",
+    "id": "ST-526",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Tencent Hunyuan",
@@ -17754,7 +17358,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-539",
+    "id": "ST-527",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / MiniMax",
@@ -17787,7 +17391,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-540",
+    "id": "ST-528",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Zhipu AI",
@@ -17820,7 +17424,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-541",
+    "id": "ST-529",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Zhipu AI",
@@ -17853,7 +17457,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-542",
+    "id": "ST-530",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Multimodal Models / Computer Vision / Representation Learning / StepFun",
@@ -17886,7 +17490,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-543",
+    "id": "ST-531",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / StepFun",
@@ -17919,7 +17523,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-544",
+    "id": "ST-532",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Baichuan AI",
@@ -17952,7 +17556,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-545",
+    "id": "ST-533",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Baichuan AI",
@@ -17985,7 +17589,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-546",
+    "id": "ST-534",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / 01.AI",
@@ -18018,7 +17622,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-547",
+    "id": "ST-535",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / 01.AI",
@@ -18051,7 +17655,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-548",
+    "id": "ST-536",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / 01.AI",
@@ -18084,7 +17688,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-549",
+    "id": "ST-537",
     "section": "Talk",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Multimodal Models / Computer Vision / Representation Learning / ByteDance AI / Seed lineage",
@@ -18117,7 +17721,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-550",
+    "id": "ST-538",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / ModelBest",
@@ -18150,7 +17754,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-551",
+    "id": "ST-539",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Physical Intelligence / ModelBest",
@@ -18183,7 +17787,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-552",
+    "id": "ST-540",
     "section": "Talk",
     "domain": "World Models / Predictive Intelligence",
     "keywords": "World Models / Video Generation / Spatial Intelligence / ShengShu Technology / Vidu",
@@ -18216,7 +17820,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-553",
+    "id": "ST-541",
     "section": "Interview",
     "domain": "World Models / Predictive Intelligence",
     "keywords": "World Models / Video Generation / Spatial Intelligence / ShengShu Technology / Vidu",
@@ -18249,7 +17853,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-554",
+    "id": "ST-542",
     "section": "Talk",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Shanghai AI Laboratory",
@@ -18282,7 +17886,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-555",
+    "id": "ST-543",
     "section": "Course",
     "domain": "Computer Vision / 3D Vision",
     "keywords": "Multimodal Models / Computer Vision / Representation Learning / Shanghai AI Laboratory / InternVL",
@@ -18315,7 +17919,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-556",
+    "id": "ST-544",
     "section": "Course",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Shanghai AI Laboratory / InternLM",
@@ -18348,7 +17952,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-557",
+    "id": "ST-545",
     "section": "Talk",
     "domain": "Robotics / Embodied AI",
     "keywords": "Robot Learning / Embodied AI / Physical Intelligence / Shanghai AI Laboratory",
@@ -18381,7 +17985,7 @@
     "publishedAtVerified": true
   },
   {
-    "id": "ST-558",
+    "id": "ST-546",
     "section": "Interview",
     "domain": "Agents / Tool Use / Reasoning",
     "keywords": "Foundation Models / Agents / Reasoning / Tool Use / Moonshot AI / Zhipu AI / Baichuan AI / ModelBest",
