@@ -1,7 +1,7 @@
 {
-  "verifiedOn": "2026-08-12",
-  "total": 529,
-  "verified": 104,
+  "verifiedOn": "2026-08-13",
+  "total": 558,
+  "verified": 133,
   "partial": 425,
   "failed": 0,
   "byPlatform": {
@@ -12,8 +12,8 @@
       "failed": 0
     },
     "Bilibili": {
-      "total": 104,
-      "verified": 104,
+      "total": 133,
+      "verified": 133,
       "partial": 0,
       "failed": 0
     }
