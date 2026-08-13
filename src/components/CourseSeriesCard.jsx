@@ -17,6 +17,7 @@ export default function CourseSeriesCard({ series, index, onOpen }) {
   const focusAreas = uniqueValues(series.resources, 'focusArea').map((area) => area === 'Other' ? 'Other' : area)
   const sourceLabel = channels.length === 1 ? channels[0] : `${channels.length} publishers`
   const videoLabel = `${series.resources.length} ${series.resources.length === 1 ? 'video' : 'videos'}`
+  const seriesLabel = `${representative.section} series`
 
   return (
     <article className="resource-card series-card">
@@ -24,14 +25,14 @@ export default function CourseSeriesCard({ series, index, onOpen }) {
         type="button"
         className={`resource-thumb resource-thumb--series ${!thumbnail || imageFailed ? 'resource-thumb--editorial' : ''}`}
         onClick={() => onOpen(series)}
-        aria-label={`Browse course series ${series.title}`}
+        aria-label={`Browse ${seriesLabel.toLocaleLowerCase()} ${series.title}`}
       >
         {thumbnail && !imageFailed ? (
-          <img src={thumbnail} alt={`${series.title} course series thumbnail`} loading="lazy" onError={() => setImageFailed(true)} />
+          <img src={thumbnail} alt={`${series.title} ${seriesLabel.toLocaleLowerCase()} thumbnail`} loading="lazy" onError={() => setImageFailed(true)} />
         ) : (
           <span className="editorial-cover editorial-cover--series" aria-hidden="true">
             <b>{String(index + 1).padStart(2, '0')}</b>
-            <span>Course series</span>
+            <span>{seriesLabel}</span>
             <i />
           </span>
         )}
@@ -41,7 +42,7 @@ export default function CourseSeriesCard({ series, index, onOpen }) {
       </button>
 
       <div className="resource-meta-top">
-        <span>Course series</span>
+        <span>{seriesLabel}</span>
         <span>{platforms.join(' + ')}</span>
       </div>
       <h3>

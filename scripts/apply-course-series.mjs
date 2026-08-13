@@ -28,7 +28,7 @@ function numberedOrder(resource) {
   return part && main ? base + Number(part[1]) / 10 : base
 }
 
-const seriesDefinitions = [
+const courseSeriesDefinitions = [
   {
     id: 'stanford-cs229-autumn-2018',
     title: 'Stanford CS229: Machine Learning — Autumn 2018',
@@ -171,6 +171,108 @@ const seriesDefinitions = [
   },
 ]
 
+const interviewSeriesDefinitions = [
+  {
+    id: 'lex-fridman-podcast',
+    title: 'Lex Fridman Podcast',
+    test: (resource) => resource.channel === 'Lex Fridman',
+    order: publishedOrder,
+  },
+  {
+    id: 'dwarkesh-patel-interviews',
+    title: 'Dwarkesh Patel Interviews',
+    test: (resource) => resource.channel === 'Dwarkesh Patel',
+    order: publishedOrder,
+  },
+  {
+    id: 'machine-learning-street-talk-interviews',
+    title: 'Machine Learning Street Talk Interviews',
+    test: (resource) => resource.channel === 'Machine Learning Street Talk',
+    order: publishedOrder,
+  },
+  {
+    id: 'robot-brains-podcast',
+    title: 'The Robot Brains Podcast',
+    test: (resource) => resource.channel === 'The Robot Brains Podcast',
+    order: publishedOrder,
+  },
+  {
+    id: 'no-priors-podcast',
+    title: 'No Priors',
+    test: (resource) => resource.channel === 'No Priors: AI, Machine Learning, Tech, & Startups',
+    order: publishedOrder,
+  },
+  {
+    id: 'twiml-ai-podcast',
+    title: 'The TWIML AI Podcast',
+    test: (resource) => resource.channel === 'The TWIML AI Podcast with Sam Charrington',
+    order: publishedOrder,
+  },
+  {
+    id: 'latent-space-interviews',
+    title: 'Latent Space Interviews',
+    test: (resource) => resource.channel === 'Latent Space',
+    order: publishedOrder,
+  },
+  {
+    id: 'weights-and-biases-interviews',
+    title: 'Weights & Biases Interviews',
+    test: (resource) => resource.channel === 'Weights & Biases',
+    order: publishedOrder,
+  },
+  {
+    id: 'eye-on-ai-podcast',
+    title: 'Eye on AI',
+    test: (resource) => resource.channel === 'Eye on AI',
+    order: publishedOrder,
+  },
+  {
+    id: 'zhang-xiaojun-business-interviews',
+    title: '张小珺商业访谈录',
+    test: (resource) => resource.channel === '张小珺商业访谈录',
+    order: publishedOrder,
+  },
+  {
+    id: 'wei-shijie-mantan-podcast',
+    title: '卫诗婕｜漫谈播客集',
+    test: (resource) => resource.channel === '卫诗婕_漫谈播客集',
+    order: publishedOrder,
+  },
+  {
+    id: 'silicon-valley-101-ai-conversations',
+    title: '硅谷101｜AI Conversations',
+    test: (resource) => resource.channel === '硅谷101',
+    order: publishedOrder,
+  },
+  {
+    id: 'crossroads-video-podcast',
+    title: '十字路口｜视频播客',
+    test: (resource) => resource.channel === 'Koji杨远骋at十字路口',
+    order: publishedOrder,
+  },
+  {
+    id: 'robot-talk-interviews',
+    title: 'Robot Talk Interviews',
+    test: (resource) => resource.channel === 'Robot Talk',
+    order: publishedOrder,
+  },
+  {
+    id: 'stanford-medicine-ai-life-sciences-symposium',
+    title: 'Stanford Medicine AI in Life Sciences Symposium',
+    test: (resource) => resource.channel === 'Stanford Medicine' && /AI in Life Sciences Symposium/i.test(resource.title),
+    order: publishedOrder,
+  },
+]
+
+const seriesDefinitionsBySection = {
+  Course: courseSeriesDefinitions,
+  Interview: interviewSeriesDefinitions,
+}
+
+const seriesDefinitions = Object.entries(seriesDefinitionsBySection).flatMap(([section, definitions]) =>
+  definitions.map((definition) => ({ ...definition, section })),
+)
+
 function csvCell(value) {
   const normalized = Array.isArray(value)
     ? value.map((item) => typeof item === 'object' ? JSON.stringify(item) : item).join('; ')
@@ -185,8 +287,8 @@ const resources = JSON.parse(await readFile(jsonPath, 'utf8'))
 const assignments = new Map()
 
 for (const resource of resources) {
-  if (resource.section !== 'Course') continue
-  const matches = seriesDefinitions.filter((definition) => definition.test(resource))
+  const definitions = seriesDefinitionsBySection[resource.section] ?? []
+  const matches = definitions.filter((definition) => definition.test(resource))
   if (matches.length > 1) {
     throw new Error(`${resource.id} matched multiple series: ${matches.map(({ id }) => id).join(', ')}`)
   }
@@ -207,7 +309,7 @@ const updated = resources.map((resource) => {
 const seriesSummary = seriesDefinitions.map((definition) => {
   const members = updated.filter((resource) => resource.seriesId === definition.id)
   if (members.length < 2) throw new Error(`${definition.id} has only ${members.length} matching resource(s)`)
-  return { id: definition.id, title: definition.title, resources: members.length }
+  return { id: definition.id, title: definition.title, section: definition.section, resources: members.length }
 })
 
 const fields = Object.keys(updated[0])
@@ -223,5 +325,6 @@ console.log(JSON.stringify({
   series: seriesSummary.length,
   groupedResources: assignments.size,
   standaloneCourseResources: updated.filter((resource) => resource.section === 'Course' && !resource.seriesId).length,
+  standaloneInterviewResources: updated.filter((resource) => resource.section === 'Interview' && !resource.seriesId).length,
   seriesSummary,
 }, null, 2))

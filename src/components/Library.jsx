@@ -1,7 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { CheckIcon, ChevronIcon, ClockIcon, DownloadIcon, GlobeIcon, PlatformIcon, SearchIcon, SortIcon } from '../icons'
 import { exportCsv, exportMarkdown } from '../export-utils'
-import { groupCourseSeries, matchesSearch, sortResources } from '../resource-utils'
+import { groupResourceSeries, matchesSearch, sortResources } from '../resource-utils'
 import CourseSeriesCard from './CourseSeriesCard'
 import CourseSeriesDetail from './CourseSeriesDetail'
 import ResourceCard from './ResourceCard'
@@ -200,7 +200,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
     ))
     return sortResources(matches, sort)
   }, [resources, duration, format, focus, language, platform, query, sort])
-  const entries = useMemo(() => groupCourseSeries(filtered), [filtered])
+  const entries = useMemo(() => groupResourceSeries(filtered), [filtered])
 
   useEffect(() => setVisible(10), [duration, format, focus, language, platform, query, sort])
 
@@ -313,7 +313,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
         <div className="results-bar" aria-live="polite">
           <span>
             {filtered.length} {filtered.length === 1 ? 'resource' : 'resources'}
-            {entries.length !== filtered.length && ` · ${entries.length} ${entries.length === 1 ? 'entry' : 'entries'} after course grouping`}
+            {entries.length !== filtered.length && ` · ${entries.length} ${entries.length === 1 ? 'entry' : 'entries'} after series grouping`}
           </span>
           <div className="results-actions">
             {(query || format !== 'All' || focus !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All') && (

@@ -31,9 +31,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20221029
   },
   {
     "id": "ST-002",
@@ -67,9 +67,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20240602
   },
   {
     "id": "ST-003",
@@ -103,9 +103,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20260323
   },
   {
     "id": "ST-004",
@@ -139,9 +139,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20230330
   },
   {
     "id": "ST-005",
@@ -175,9 +175,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20190715
   },
   {
     "id": "ST-006",
@@ -211,9 +211,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20250723
   },
   {
     "id": "ST-007",
@@ -247,9 +247,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20220714
   },
   {
     "id": "ST-008",
@@ -283,9 +283,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20251125
   },
   {
     "id": "ST-009",
@@ -319,9 +319,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20251017
   },
   {
     "id": "ST-010",
@@ -355,9 +355,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20260213
   },
   {
     "id": "ST-011",
@@ -391,9 +391,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20250926
   },
   {
     "id": "ST-012",
@@ -427,9 +427,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20260313
   },
   {
     "id": "ST-013",
@@ -463,9 +463,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20230327
   },
   {
     "id": "ST-014",
@@ -499,9 +499,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20241002
   },
   {
     "id": "ST-015",
@@ -535,9 +535,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20241113
   },
   {
     "id": "ST-016",
@@ -643,9 +643,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20210805
   },
   {
     "id": "ST-019",
@@ -715,9 +715,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "latent-space-interviews",
+    "seriesTitle": "Latent Space Interviews",
+    "seriesOrder": 20260603
   },
   {
     "id": "ST-021",
@@ -787,9 +787,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "weights-and-biases-interviews",
+    "seriesTitle": "Weights & Biases Interviews",
+    "seriesOrder": 20230518
   },
   {
     "id": "ST-023",
@@ -823,9 +823,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "weights-and-biases-interviews",
+    "seriesTitle": "Weights & Biases Interviews",
+    "seriesOrder": 20230713
   },
   {
     "id": "ST-024",
@@ -859,9 +859,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20210724
   },
   {
     "id": "ST-025",
@@ -895,9 +895,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "weights-and-biases-interviews",
+    "seriesTitle": "Weights & Biases Interviews",
+    "seriesOrder": 20230420
   },
   {
     "id": "ST-026",
@@ -931,9 +931,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "weights-and-biases-interviews",
+    "seriesTitle": "Weights & Biases Interviews",
+    "seriesOrder": 20230302
   },
   {
     "id": "ST-027",
@@ -1003,9 +1003,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20260312
   },
   {
     "id": "ST-029",
@@ -1075,9 +1075,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "stanford-medicine-ai-life-sciences-symposium",
+    "seriesTitle": "Stanford Medicine AI in Life Sciences Symposium",
+    "seriesOrder": 20260610
   },
   {
     "id": "ST-031",
@@ -1111,9 +1111,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20260320
   },
   {
     "id": "ST-032",
@@ -1147,9 +1147,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "stanford-medicine-ai-life-sciences-symposium",
+    "seriesTitle": "Stanford Medicine AI in Life Sciences Symposium",
+    "seriesOrder": 20260610
   },
   {
     "id": "ST-033",
@@ -1183,9 +1183,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "eye-on-ai-podcast",
+    "seriesTitle": "Eye on AI",
+    "seriesOrder": 20230510
   },
   {
     "id": "ST-034",
@@ -1219,9 +1219,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20251021
   },
   {
     "id": "ST-035",
@@ -1255,9 +1255,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20230510
   },
   {
     "id": "ST-036",
@@ -1291,9 +1291,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20240410
   },
   {
     "id": "ST-037",
@@ -1327,9 +1327,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20230311
   },
   {
     "id": "ST-038",
@@ -1363,9 +1363,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20210921
   },
   {
     "id": "ST-039",
@@ -1399,9 +1399,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20251123
   },
   {
     "id": "ST-040",
@@ -1435,9 +1435,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20240905
   },
   {
     "id": "ST-041",
@@ -1471,9 +1471,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "latent-space-interviews",
+    "seriesTitle": "Latent Space Interviews",
+    "seriesOrder": 20250819
   },
   {
     "id": "ST-042",
@@ -1507,9 +1507,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20241103
   },
   {
     "id": "ST-043",
@@ -1543,9 +1543,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "weights-and-biases-interviews",
+    "seriesTitle": "Weights & Biases Interviews",
+    "seriesOrder": 20230105
   },
   {
     "id": "ST-044",
@@ -1579,9 +1579,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20260520
   },
   {
     "id": "ST-045",
@@ -1615,9 +1615,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20220104
   },
   {
     "id": "ST-046",
@@ -1651,9 +1651,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20260108
   },
   {
     "id": "ST-047",
@@ -1687,9 +1687,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "machine-learning-street-talk-interviews",
+    "seriesTitle": "Machine Learning Street Talk Interviews",
+    "seriesOrder": 20250706
   },
   {
     "id": "ST-048",
@@ -1723,9 +1723,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20260618
   },
   {
     "id": "ST-049",
@@ -1759,9 +1759,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20250217
   },
   {
     "id": "ST-050",
@@ -1831,9 +1831,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "latent-space-interviews",
+    "seriesTitle": "Latent Space Interviews",
+    "seriesOrder": 20260624
   },
   {
     "id": "ST-052",
@@ -1867,9 +1867,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20240522
   },
   {
     "id": "ST-053",
@@ -1903,9 +1903,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20210921
   },
   {
     "id": "ST-054",
@@ -1939,9 +1939,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "no-priors-podcast",
+    "seriesTitle": "No Priors",
+    "seriesOrder": 20260417
   },
   {
     "id": "ST-055",
@@ -1975,9 +1975,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20210817
   },
   {
     "id": "ST-056",
@@ -2011,9 +2011,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "latent-space-interviews",
+    "seriesTitle": "Latent Space Interviews",
+    "seriesOrder": 20250815
   },
   {
     "id": "ST-057",
@@ -2083,9 +2083,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-brains-podcast",
+    "seriesTitle": "The Robot Brains Podcast",
+    "seriesOrder": 20230816
   },
   {
     "id": "ST-059",
@@ -2119,9 +2119,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20250331
   },
   {
     "id": "ST-060",
@@ -2155,9 +2155,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "latent-space-interviews",
+    "seriesTitle": "Latent Space Interviews",
+    "seriesOrder": 20250403
   },
   {
     "id": "ST-061",
@@ -2191,9 +2191,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "eye-on-ai-podcast",
+    "seriesTitle": "Eye on AI",
+    "seriesOrder": 20230412
   },
   {
     "id": "ST-062",
@@ -2227,9 +2227,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20180917
   },
   {
     "id": "ST-063",
@@ -2263,9 +2263,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "latent-space-interviews",
+    "seriesTitle": "Latent Space Interviews",
+    "seriesOrder": 20251108
   },
   {
     "id": "ST-064",
@@ -2299,9 +2299,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "weights-and-biases-interviews",
+    "seriesTitle": "Weights & Biases Interviews",
+    "seriesOrder": 20230410
   },
   {
     "id": "ST-065",
@@ -2335,9 +2335,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20220509
   },
   {
     "id": "ST-066",
@@ -2371,9 +2371,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "eye-on-ai-podcast",
+    "seriesTitle": "Eye on AI",
+    "seriesOrder": 20241023
   },
   {
     "id": "ST-067",
@@ -2407,9 +2407,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20240527
   },
   {
     "id": "ST-068",
@@ -2443,9 +2443,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20200430
   },
   {
     "id": "ST-069",
@@ -2479,9 +2479,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "twiml-ai-podcast",
+    "seriesTitle": "The TWIML AI Podcast",
+    "seriesOrder": 20230605
   },
   {
     "id": "ST-070",
@@ -2515,9 +2515,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "eye-on-ai-podcast",
+    "seriesTitle": "Eye on AI",
+    "seriesOrder": 20240109
   },
   {
     "id": "ST-071",
@@ -2659,9 +2659,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "silicon-valley-101-ai-conversations",
+    "seriesTitle": "硅谷101｜AI Conversations",
+    "seriesOrder": 20260306
   },
   {
     "id": "ST-075",
@@ -8131,9 +8131,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "zhang-xiaojun-business-interviews",
+    "seriesTitle": "张小珺商业访谈录",
+    "seriesOrder": 20260316
   },
   {
     "id": "ST-227",
@@ -8167,9 +8167,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "wei-shijie-mantan-podcast",
+    "seriesTitle": "卫诗婕｜漫谈播客集",
+    "seriesOrder": 20260723
   },
   {
     "id": "ST-228",
@@ -8455,9 +8455,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "zhang-xiaojun-business-interviews",
+    "seriesTitle": "张小珺商业访谈录",
+    "seriesOrder": 20260424
   },
   {
     "id": "ST-236",
@@ -8491,9 +8491,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "zhang-xiaojun-business-interviews",
+    "seriesTitle": "张小珺商业访谈录",
+    "seriesOrder": 20250323
   },
   {
     "id": "ST-237",
@@ -8527,9 +8527,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "crossroads-video-podcast",
+    "seriesTitle": "十字路口｜视频播客",
+    "seriesOrder": 20260621
   },
   {
     "id": "ST-238",
@@ -8599,9 +8599,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "crossroads-video-podcast",
+    "seriesTitle": "十字路口｜视频播客",
+    "seriesOrder": 20260809
   },
   {
     "id": "ST-240",
@@ -9067,9 +9067,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "zhang-xiaojun-business-interviews",
+    "seriesTitle": "张小珺商业访谈录",
+    "seriesOrder": 20260716
   },
   {
     "id": "ST-253",
@@ -9103,9 +9103,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "wei-shijie-mantan-podcast",
+    "seriesTitle": "卫诗婕｜漫谈播客集",
+    "seriesOrder": 20260804
   },
   {
     "id": "ST-254",
@@ -11371,9 +11371,9 @@
     "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
     "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
     "lastVerifiedAt": "2026-08-13",
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20260212
   },
   {
     "id": "ST-317",
@@ -11407,9 +11407,9 @@
     "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
     "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
     "lastVerifiedAt": "2026-08-13",
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20260131
   },
   {
     "id": "ST-318",
@@ -11515,9 +11515,9 @@
     "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
     "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
     "lastVerifiedAt": "2026-08-13",
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20210731
   },
   {
     "id": "ST-321",
@@ -11551,9 +11551,9 @@
     "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
     "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
     "lastVerifiedAt": "2026-08-13",
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20200721
   },
   {
     "id": "ST-322",
@@ -11767,9 +11767,9 @@
     "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
     "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
     "lastVerifiedAt": "2026-08-13",
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-talk-interviews",
+    "seriesTitle": "Robot Talk Interviews",
+    "seriesOrder": 20260227
   },
   {
     "id": "ST-328",
@@ -11803,9 +11803,9 @@
     "subtitleVerificationScope": "blocked by YouTube anti-bot verification on this network",
     "metadataVerifiedVia": "YouTube privacy-enhanced embed player metadata",
     "lastVerifiedAt": "2026-08-13",
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "robot-talk-interviews",
+    "seriesTitle": "Robot Talk Interviews",
+    "seriesOrder": 20240315
   },
   {
     "id": "ST-329",
@@ -13351,9 +13351,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20200809
   },
   {
     "id": "ST-372",
@@ -13387,9 +13387,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "lex-fridman-podcast",
+    "seriesTitle": "Lex Fridman Podcast",
+    "seriesOrder": 20200714
   },
   {
     "id": "ST-373",
@@ -17995,9 +17995,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "dwarkesh-patel-interviews",
+    "seriesTitle": "Dwarkesh Patel Interviews",
+    "seriesOrder": 20250912
   },
   {
     "id": "ST-501",
@@ -18427,9 +18427,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "silicon-valley-101-ai-conversations",
+    "seriesTitle": "硅谷101｜AI Conversations",
+    "seriesOrder": 20251110
   },
   {
     "id": "ST-513",
@@ -18535,9 +18535,9 @@
     "lastVerificationAttemptAt": "2026-08-13",
     "metadataVerificationError": "",
     "publishedAtVerified": true,
-    "seriesId": "",
-    "seriesTitle": "",
-    "seriesOrder": null
+    "seriesId": "wei-shijie-mantan-podcast",
+    "seriesTitle": "卫诗婕｜漫谈播客集",
+    "seriesOrder": 20260406
   },
   {
     "id": "ST-516",

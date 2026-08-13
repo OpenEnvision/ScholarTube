@@ -16,6 +16,8 @@ export default function CourseSeriesDetail({ series, onClose }) {
   const directions = uniqueValues(series.resources, 'focusArea')
   const channels = uniqueValues(series.resources, 'channel')
   const videoLabel = `${series.resources.length} ${series.resources.length === 1 ? 'video' : 'videos'}`
+  const isCourse = representative.section === 'Course'
+  const seriesLabel = `${representative.section} series`
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow
@@ -38,12 +40,12 @@ export default function CourseSeriesDetail({ series, onClose }) {
       if (event.target === event.currentTarget) onClose()
     }}>
       <section className="resource-detail series-detail" role="dialog" aria-modal="true" aria-labelledby="series-detail-title">
-        <button className="resource-detail__close" type="button" onClick={onClose} ref={closeRef} aria-label="Close course series">
+        <button className="resource-detail__close" type="button" onClick={onClose} ref={closeRef} aria-label={`Close ${seriesLabel.toLocaleLowerCase()}`}>
           <CloseIcon />
         </button>
 
         <div className="resource-detail__media series-detail__media">
-          {thumbnail ? <img src={thumbnail} alt={`${series.title} course series thumbnail`} /> : <div className="resource-detail__placeholder">Course series</div>}
+          {thumbnail ? <img src={thumbnail} alt={`${series.title} ${seriesLabel.toLocaleLowerCase()} thumbnail`} /> : <div className="resource-detail__placeholder">{seriesLabel}</div>}
           <div className="series-detail__media-label">
             <span>{videoLabel}</span>
             <strong>{formatDuration(totalDuration)}</strong>
@@ -52,7 +54,7 @@ export default function CourseSeriesDetail({ series, onClose }) {
 
         <div className="resource-detail__body">
           <div className="resource-detail__eyebrow">
-            <span>Course series</span>
+            <span>{seriesLabel}</span>
             <span>{videoLabel}</span>
           </div>
           <h2 id="series-detail-title">{series.title}</h2>
@@ -60,12 +62,16 @@ export default function CourseSeriesDetail({ series, onClose }) {
 
           <div className="resource-detail__summary">
             <article>
-              <p className="resource-detail__label">One course, one place</p>
-              <p>Lectures from the same course are grouped here while each canonical video link and its metadata remain intact.</p>
+              <p className="resource-detail__label">{isCourse ? 'One course, one place' : 'One program, one place'}</p>
+              <p>{isCourse
+                ? 'Lectures from the same course are grouped here while each canonical video link and its metadata remain intact.'
+                : 'Episodes from the same interview program are grouped here while each canonical video link and its metadata remain intact.'}</p>
             </article>
             <article>
               <p className="resource-detail__label">How to use it</p>
-              <p>Follow the listed sequence for structured study, or open the lecture that matches the topic you need.</p>
+              <p>{isCourse
+                ? 'Follow the listed sequence for structured study, or open the lecture that matches the topic you need.'
+                : 'Browse the conversations in publication order, or open the episode with the guest and topic you need.'}</p>
             </article>
           </div>
 
@@ -78,7 +84,7 @@ export default function CourseSeriesDetail({ series, onClose }) {
           </dl>
 
           <div className="series-detail__episodes">
-            <p className="resource-detail__label">Videos in this series</p>
+            <p className="resource-detail__label">{isCourse ? 'Lectures in this series' : 'Episodes in this series'}</p>
             <ol>
               {series.resources.map((resource, index) => (
                 <li key={resource.id}>

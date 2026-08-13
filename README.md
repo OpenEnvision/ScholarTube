@@ -25,6 +25,7 @@ The [`data`](data) directory contains:
 - 128 Bilibili resources
 - 147 interviews, 192 courses, and 207 talks
 - 25 explicit course series grouping 80 videos into 137 course entries
+- 15 interview series grouping 82 episodes into 80 interview entries
 
 Interface labels, taxonomy, and editorial metadata are in English. Original video titles, channel names, and personal names remain in their source language to preserve searchability and provenance.
 

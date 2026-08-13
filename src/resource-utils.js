@@ -32,12 +32,12 @@ export function sortResources(resources, sort) {
   })
 }
 
-export function groupCourseSeries(resources) {
+export function groupResourceSeries(resources) {
   const entries = []
   const seriesEntries = new Map()
 
   resources.forEach((resource) => {
-    if (resource.section !== 'Course' || !resource.seriesId) {
+    if (!resource.seriesId) {
       entries.push({ kind: 'resource', id: resource.id, resource })
       return
     }
@@ -49,6 +49,7 @@ export function groupCourseSeries(resources) {
         id: `series:${resource.seriesId}`,
         seriesId: resource.seriesId,
         title: resource.seriesTitle,
+        section: resource.section,
         resources: [],
       }
       seriesEntries.set(resource.seriesId, series)
