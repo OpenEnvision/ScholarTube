@@ -1,10 +1,9 @@
-import { ArrowIcon, ExternalIcon, PlayIcon } from '../icons'
-import { formatDuration, getThumbnail } from '../resource-utils'
+import { ArrowIcon } from '../icons'
 
-export default function Hero({ featured }) {
+export default function Hero({ children }) {
   return (
     <section className="hero" id="top">
-      <div className="hero-grid shell">
+      <div className={`hero-grid shell${children ? '' : ' hero-grid--compact'}`}>
         <div className="hero-copy">
           <h1>Watch the ideas shaping intelligent systems.</h1>
           <p className="hero-description">
@@ -18,41 +17,14 @@ export default function Hero({ featured }) {
             <a className="button button--text" href="#curation">How we curate</a>
           </div>
           <p className="hero-facts">
-            <span><b>379</b> verified resources</span>
-            <span><b>120</b> interviews</span>
-            <span><b>131</b> courses</span>
-            <span><b>128</b> talks</span>
+            <span><b>546</b> verified resources</span>
+            <span><b>147</b> interviews</span>
+            <span><b>192</b> courses</span>
+            <span><b>207</b> talks</span>
           </p>
         </div>
 
-        <article className="featured-media">
-          <div className="featured-topline">
-            <span>Featured now</span>
-            <span>ST / 008</span>
-          </div>
-          <div className="featured-frame">
-            <img src={getThumbnail(featured)} alt={`${featured.title} video thumbnail`} />
-            <a
-              className="featured-hit"
-              href={featured.url}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`Watch ${featured.title} at source`}
-            />
-            <span className="featured-play" aria-hidden="true"><PlayIcon /></span>
-            <span className="featured-shade" aria-hidden="true" />
-            <div className="featured-copy">
-              <div>
-                <p>{featured.section} · {formatDuration(featured.durationMinutes)} · {featured.channel}</p>
-                <h2>{featured.title}</h2>
-              </div>
-              <a href={featured.url} target="_blank" rel="noreferrer" aria-label={`Watch ${featured.title} at source`}>
-                <span>Watch at source</span>
-                <ExternalIcon />
-              </a>
-            </div>
-          </div>
-        </article>
+        {children}
       </div>
 
       <div className="format-rail" aria-hidden="true">

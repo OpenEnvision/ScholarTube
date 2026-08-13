@@ -92,3 +92,65 @@ export function ChevronIcon() {
     </svg>
   )
 }
+
+export function CloseIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M6 6l12 12M18 6 6 18" />
+    </svg>
+  )
+}
+
+export function ClockIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </svg>
+  )
+}
+
+export function PlatformIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <rect x="3.5" y="6" width="17" height="12" rx="2" />
+      <path d="m10 9 5 3-5 3V9Z" />
+    </svg>
+  )
+}
+
+export function DownloadIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M12 4v11M7.5 11.5 12 16l4.5-4.5M5 20h14" />
+    </svg>
+  )
+}
+
+export function GridIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <rect x="4" y="4" width="6" height="6" rx="1" />
+      <rect x="14" y="4" width="6" height="6" rx="1" />
+      <rect x="4" y="14" width="6" height="6" rx="1" />
+      <rect x="14" y="14" width="6" height="6" rx="1" />
+    </svg>
+  )
+}
+
+export function ListIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M8 6h12M8 12h12M8 18h12" />
+      <path d="M4 6h.01M4 12h.01M4 18h.01" strokeWidth="2.8" />
+    </svg>
+  )
+}
+
+export function PageArrowIcon({ direction = 'next' }) {
+  return (
+    <svg viewBox="0 0 20 20" {...iconProps} style={direction === 'previous' ? { transform: 'rotate(180deg)' } : undefined}>
+      <path d="m7 5 5 5-5 5" />
+    </svg>
+  )
+}

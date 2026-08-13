@@ -1,41 +1,50 @@
 import { ArrowIcon } from '../icons'
 
-const directions = [
+const directionDefinitions = [
   {
     id: 'World Model',
     number: '01',
     label: 'World Models',
-    count: 52,
     copy: 'Learned simulators, temporal dynamics, planning, and spatial reasoning.',
-    breakdown: [15, 18, 19],
   },
   {
     id: 'Agent',
     number: '02',
     label: 'Agents',
-    count: 42,
     copy: 'Tool use, memory, orchestration, autonomy, and agent evaluation.',
-    breakdown: [12, 14, 16],
   },
   {
     id: 'Vision',
     number: '03',
     label: 'Vision',
-    count: 57,
     copy: 'Perception, multimodal understanding, generation, and video systems.',
-    breakdown: [13, 24, 20],
   },
   {
     id: 'Robotics',
     number: '04',
     label: 'Robotics',
-    count: 53,
     copy: 'Embodied intelligence where perception becomes grounded action.',
-    breakdown: [17, 18, 18],
+  },
+  {
+    id: 'Other',
+    number: '05',
+    label: 'Broader AI',
+    copy: 'Foundations, AI systems, NLP, industry, social impact, and research frontiers.',
   },
 ]
 
-export default function Directions({ setFocus }) {
+export default function Directions({ setFocus, resources }) {
+  const directions = directionDefinitions.map((direction) => {
+    const matching = resources.filter((resource) => resource.focusArea === direction.id)
+    return {
+      ...direction,
+      count: matching.length,
+      breakdown: ['Interview', 'Course', 'Talk'].map((section) => (
+        matching.filter((resource) => resource.section === section).length
+      )),
+    }
+  })
+
   function chooseDirection(id) {
     setFocus(id)
     document.querySelector('#library')?.scrollIntoView({ behavior: 'smooth' })
@@ -49,7 +58,7 @@ export default function Directions({ setFocus }) {
             <p className="section-kicker">Research directions</p>
             <h2>Enter through the question you’re working on.</h2>
           </div>
-          <p>Four priority areas form a path into the index. The remaining collection stays searchable across broader AI domains.</p>
+          <p>Five directions form a path into the index, with Broader AI refined into six focused secondary topics.</p>
         </div>
 
         <div className="direction-list">

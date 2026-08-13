@@ -38,6 +38,22 @@ export default function Header({ query, setQuery, onFormatSelect }) {
             </a>
           ))}
           <a href="#curation" onClick={() => setOpen(false)}>About</a>
+          <div className="mobile-nav-tools">
+            <label className="mobile-nav-search">
+              <SearchIcon />
+              <span className="sr-only">Search the index</span>
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter') goToLibrary()
+                }}
+                placeholder="Search talks, speakers, topics"
+              />
+            </label>
+            <a className="mobile-nav-submit" href="#contribute" onClick={() => setOpen(false)}>Submit a resource</a>
+          </div>
         </nav>
 
         <div className="header-tools">
