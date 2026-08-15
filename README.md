@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/scholartube-logo.png" width="112" alt="ScholarTube logo" />
+  <img src="./assets/scholartube_new.png" width="112" alt="ScholarTube logo" />
 </p>
 
 <h1 align="center">ScholarTube</h1>
