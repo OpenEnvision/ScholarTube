@@ -28,12 +28,9 @@ The project treats research video as part of the modern technical record: a plac
 ## Contents
 
 - [Why ScholarTube](#why-scholartube)
-- [What ScholarTube is](#what-scholartube-is)
-- [Current snapshot](#current-snapshot)
 - [Research coverage](#research-coverage)
 - [Discovery experience](#discovery-experience)
 - [Editorial standard](#editorial-standard)
-- [Metadata and verification](#metadata-and-verification)
 - [Data artifacts](#data-artifacts)
 - [Repository structure](#repository-structure)
 - [Local development](#local-development)
@@ -51,31 +48,6 @@ Important AI knowledge increasingly appears in formats that sit around the paper
 These recordings are valuable but difficult to revisit systematically. They are distributed across platforms, described with inconsistent metadata, mixed with short announcements and promotional clips, and often disconnected from the research questions they help answer. ScholarTube addresses that discovery problem with a curated, searchable, and source-faithful index.
 
 The goal is not to replace papers, course pages, conference archives, or video platforms. It is to provide a durable path into the most useful long-form material around them.
-
-## What ScholarTube is
-
-| ScholarTube is | ScholarTube is not |
-| --- | --- |
-| A curated discovery system for AI research video | A mirror or rehost of the original videos |
-| A taxonomy spanning research directions and broader AI topics | A feed ranked only by recency or popularity |
-| A source-linked catalog with reviewable metadata | A leaderboard for speakers, labs, or institutions |
-| A structured index of individual recordings and complete series | A general-purpose directory of every AI video |
-| A portable dataset available as JSON, CSV, and XLSX | A substitute for the original source or its context |
-
-## Current snapshot
-
-The collection currently contains **860 directly accessible video resources**. Related lectures and episodes are grouped into **539 browsable entries** so that complete courses and interview series remain coherent in the interface.
-
-| View | Distribution |
-| --- | --- |
-| Formats | 149 interviews · 399 course videos · 312 talks |
-| Priority research areas | 538 resources across World Models, Agents, Vision, and Robotics |
-| Platforms | 648 YouTube · 128 Bilibili · 84 official conference-site recordings |
-| Languages | 729 English · 131 Chinese |
-| Series | 36 course series · 15 interview series |
-| Editorial tiers | 586 Core · 204 Recommended · 70 Reserve |
-
-The browser groups 290 course videos into 36 series and 82 interview episodes into 15 series. Users can still inspect every underlying recording and export the ungrouped result set.
 
 ## Research coverage
 
@@ -137,36 +109,6 @@ Each entry carries two distinct editorial signals:
 | Recommendation | Core · Recommended · Reserve | Suggested starting point, focused complement, or specialized alternative |
 
 These labels describe the role of a resource inside the index. They are not rankings of people, organizations, or research agendas.
-
-## Metadata and verification
-
-Every record uses a stable `ST-###` identifier and a compact, inspectable metadata model. Representative fields include:
-
-```json
-{
-  "id": "ST-008",
-  "section": "Interview",
-  "title": "Resource title",
-  "speaker": "Speaker or course team",
-  "channel": "Canonical channel or venue",
-  "url": "https://canonical-source.example/video",
-  "platform": "YouTube",
-  "focusArea": "World Model",
-  "domain": "Research domain",
-  "keywords": "Topic; Method; System",
-  "language": "English",
-  "durationMinutes": 90,
-  "sourceTier": "A | Official / Original Creator / Organizer",
-  "recommendation": "Core",
-  "publishedAt": "YYYY-MM-DD",
-  "lastVerifiedAt": "YYYY-MM-DD",
-  "metadataVerificationStatus": "Verified"
-}
-```
-
-Series members additionally use `seriesId`, `seriesTitle`, and `seriesOrder`. Subtitle availability, verification scope, view-count snapshots, platform identifiers, and collection notes are retained when available.
-
-The latest verification report is dated **2026-08-15**. It records 212 fully verified entries and 648 partially verified YouTube entries, with no failed records. “Partial” is kept visible when a platform exposes core metadata but blocks a complete subtitle-track check; missing information is not silently inferred.
 
 ## Data artifacts
 
