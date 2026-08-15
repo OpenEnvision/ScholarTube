@@ -118,7 +118,7 @@ export default function FeaturedCarousel({ resources }) {
           <div className="featured-promo__copy">
             <Brand inverse />
             <h2>Research knowledge,<br />in motion.</h2>
-            <p>546 source-linked videos. One curated path through the ideas shaping intelligent systems.</p>
+            <p>860 source-linked videos. One curated path through the ideas shaping intelligent systems.</p>
             <a className="featured-promo__action" href="#library">
               Explore the index <ArrowIcon />
             </a>

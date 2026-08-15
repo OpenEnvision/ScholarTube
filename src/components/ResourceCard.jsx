@@ -45,7 +45,15 @@ export default function ResourceCard({ resource, index, onOpen }) {
       <div className="resource-footer">
         <span>{displayTopic}</span>
         <span>{formatViews(resource.viewCount)} views</span>
-        <a href={resource.url} target="_blank" rel="noreferrer" aria-label="Open original video"><ExternalIcon /></a>
+        <a
+          className="resource-source-link"
+          href={resource.url}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Watch ${resource.title} at source`}
+        >
+          Watch at source <ExternalIcon />
+        </a>
       </div>
     </article>
   )

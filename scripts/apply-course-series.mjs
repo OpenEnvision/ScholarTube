@@ -28,6 +28,43 @@ function numberedOrder(resource) {
   return part && main ? base + Number(part[1]) / 10 : base
 }
 
+function orderedVideoIds(ids) {
+  return new Map(ids.map((videoId, index) => [videoId, index + 1]))
+}
+
+const stanfordCs336Spring2025 = orderedVideoIds([
+  'SQ3fZ1sAqXI', 'msHyYioAyNE', 'ptFiH_bHnJw', 'LPv1KfUXLCo', '6OBtO9niT00',
+  'E8Mju53VB00', 'l1RJcDjzK8M', 'LHpr5ytssLo', '6Q-ESEmDf4Q', 'fcgPYo3OtV0',
+  'OSYuUqGBQxw', 'x-R5l2HsXqM', 'WePxmeXU1xg', '9Cd0THLS1t0', 'Dfu7vC9jo4w',
+  '46f2QTDB08Q', 'JdGFdViaOJk',
+])
+
+const berkeleyAgenticAiFall2025 = orderedVideoIds([
+  'CvZDJxd4LKM', 'iDhzzugMOLA', 'ntjOxjZMaac', 'sfJM4LaiYsM', 'yqPIsTTdUkc',
+  'HV8pugcFVO0', 'SrLcGdVOb9w', 'xNxrBHZPDvM', '3l0Zxus34es', 'xqRAS6rAouo',
+  'r1qZpYAmqmg',
+])
+
+const ethRobotLearningSpring2026 = orderedVideoIds([
+  'X0k14u6pSxw', '5-Bb84eTTqQ', 'Ef4R5s1LqoQ', '90raNpc11tQ', 'AdTGz8YnnlE',
+  'qd6Ldsuu46I', 'imSTfMJjp7M', 'cTTmUZlOF2s', 'dtofzDY9zuo', 'CxhrjQuGEuE',
+  'eL4lcy1KNzE',
+])
+
+const deepMindUclRl2021 = orderedVideoIds([
+  'TCCjZe0y4Qc', 'aQJP3Z2Ho8U', 'zSOMeug_i_M', 'XpbLq7rIJAA', 'eaWfWoVUTEw',
+  't9uf9cuogBo', 'ook46h2Jfb4', 'FKl8kM4finE', 'y3oqOjHilio', 'AJejcug2brU',
+  'u84MFu1nG4g', 'cVzvNZOBaJ4', 'siDtNqlPoLk',
+])
+
+const mitUnderactuatedSpring2024 = orderedVideoIds([
+  'uyyBT-MHhLE', 'l2CwE3Wf7ww', 'GPvw92IKO44', 'GElVy0WTOys', 'UBPL0IbyJy4',
+  'ZBS9-4LkSIQ', 'qbuyy7ZcP9M', 'ywFpp1dy0zQ', 'e1BXMe64xJ8', 'wND0k16gCdk',
+  'IQlwn9wLnJs', 'j0Phrs3ATK0', 'N37FMfOioK0', 'P64JhXLsjwY', 'LF6IkHSRtaY',
+  'cRu4EqBswbk', 'mqyAs9CKVGw', 'ChiQgvVvgKM', 'Nj8FvDZ4d9I', 'QYDsB0qs_x8',
+  'eEOmmpA1GAw', 'QIDisUxobFk', '5fYG1JLwBSc', 'ww1flzLixHo',
+])
+
 const courseSeriesDefinitions = [
   {
     id: 'stanford-cs229-autumn-2018',
@@ -168,6 +205,36 @@ const courseSeriesDefinitions = [
     title: 'UC Berkeley LLM Agents MOOC — Fall 2024',
     test: (resource) => /^LLM Agents MOOC \| UC Berkeley/i.test(resource.title),
     order: publishedOrder,
+  },
+  {
+    id: 'stanford-cs336-spring-2025',
+    title: 'Stanford CS336: Language Modeling from Scratch — Spring 2025',
+    test: (resource) => stanfordCs336Spring2025.has(resource.videoId),
+    order: (resource) => stanfordCs336Spring2025.get(resource.videoId),
+  },
+  {
+    id: 'berkeley-agentic-ai-mooc-fall-2025',
+    title: 'UC Berkeley Agentic AI MOOC — Fall 2025',
+    test: (resource) => berkeleyAgenticAiFall2025.has(resource.videoId),
+    order: (resource) => berkeleyAgenticAiFall2025.get(resource.videoId),
+  },
+  {
+    id: 'eth-robot-learning-spring-2026',
+    title: 'ETH Zürich Robot Learning: From Fundamentals to Foundation Models — Spring 2026',
+    test: (resource) => ethRobotLearningSpring2026.has(resource.videoId),
+    order: (resource) => ethRobotLearningSpring2026.get(resource.videoId),
+  },
+  {
+    id: 'deepmind-ucl-rl-2021',
+    title: 'DeepMind × UCL Reinforcement Learning Lecture Series — 2021',
+    test: (resource) => deepMindUclRl2021.has(resource.videoId),
+    order: (resource) => deepMindUclRl2021.get(resource.videoId),
+  },
+  {
+    id: 'mit-6-8210-underactuated-robotics-spring-2024',
+    title: 'MIT 6.8210: Underactuated Robotics — Spring 2024',
+    test: (resource) => mitUnderactuatedSpring2024.has(resource.videoId),
+    order: (resource) => mitUnderactuatedSpring2024.get(resource.videoId),
   },
 ]
 

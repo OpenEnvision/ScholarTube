@@ -10,6 +10,7 @@ export default function Footer() {
         </div>
         <nav className="footer-links" aria-label="Footer navigation">
           <a href="#library">Library</a>
+          <a href="#scholartubers">ScholarTubers</a>
           <a href="#curation">Curation</a>
           <a href="#top">About</a>
           <a href="https://github.com/OpenEnvision" target="_blank" rel="noreferrer">GitHub</a>

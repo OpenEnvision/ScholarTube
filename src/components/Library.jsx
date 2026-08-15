@@ -45,6 +45,7 @@ const platformOptions = [
   { value: 'All', label: 'All platforms' },
   { value: 'YouTube', label: 'YouTube' },
   { value: 'Bilibili', label: 'Bilibili' },
+  { value: 'Conference Site', label: 'Conference sites' },
 ]
 
 const durationOptions = [
@@ -281,7 +282,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
         <div className="section-heading section-heading--row">
           <div>
             <p className="section-kicker">The index</p>
-            <h2>Explore 546 resources</h2>
+            <h2>Explore 860 resources</h2>
           </div>
           <p>Find the right depth, format, and research direction without losing the source.</p>
         </div>

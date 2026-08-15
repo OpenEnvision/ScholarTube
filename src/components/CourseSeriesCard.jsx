@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { PlayIcon } from '../icons'
+import { ExternalIcon, PlayIcon } from '../icons'
 import { formatDuration, formatViews, getCoverTheme, getDisplayTopic, getThumbnail } from '../resource-utils'
 
 function uniqueValues(resources, field) {
@@ -9,6 +9,7 @@ function uniqueValues(resources, field) {
 export default function CourseSeriesCard({ series, index, onOpen }) {
   const [imageFailed, setImageFailed] = useState(false)
   const representative = series.resources.find((resource) => getThumbnail(resource)) ?? series.resources[0]
+  const sourceResource = series.resources[0] ?? representative
   const thumbnail = getThumbnail(representative)
   const totalDuration = series.resources.reduce((total, resource) => total + resource.durationMinutes, 0)
   const totalViews = series.resources.reduce((total, resource) => total + resource.viewCount, 0)
@@ -56,7 +57,15 @@ export default function CourseSeriesCard({ series, index, onOpen }) {
       <div className="resource-footer">
         <span>{focusAreas.join(' + ')}</span>
         <span>{formatViews(totalViews)} views</span>
-        <button type="button" className="series-browse" onClick={() => onOpen(series)} aria-label={`Browse ${series.title}`}>Browse</button>
+        <a
+          className="resource-source-link"
+          href={sourceResource.url}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Watch the first video in ${series.title} at source`}
+        >
+          Watch at source <ExternalIcon />
+        </a>
       </div>
     </article>
   )

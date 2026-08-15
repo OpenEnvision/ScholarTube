@@ -16,6 +16,13 @@ export default function Header({ query, setQuery, onFormatSelect }) {
     document.querySelector('#library')?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  function goToScholarTubers() {
+    setOpen(false)
+    requestAnimationFrame(() => {
+      document.querySelector('#scholartubers')?.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
+
   return (
     <header className="site-header">
       <div className="header-inner shell">
@@ -37,6 +44,7 @@ export default function Header({ query, setQuery, onFormatSelect }) {
               {label}
             </a>
           ))}
+          <a href="#scholartubers" onClick={goToScholarTubers}>ScholarTubers</a>
           <a href="#curation" onClick={() => setOpen(false)}>About</a>
           <div className="mobile-nav-tools">
             <label className="mobile-nav-search">

@@ -94,7 +94,7 @@ export default function CourseSeriesDetail({ series, onClose }) {
                     <small>{resource.speaker === 'To be added' ? resource.channel : resource.speaker} · {formatDuration(resource.durationMinutes)}</small>
                   </div>
                   <a href={resource.url} target="_blank" rel="noreferrer" aria-label={`Watch ${resource.title} at source`}>
-                    Watch <ExternalIcon />
+                    Watch at source <ExternalIcon />
                   </a>
                 </li>
               ))}

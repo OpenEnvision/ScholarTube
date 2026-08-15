@@ -8,6 +8,7 @@ import Curation from './components/Curation'
 import Contribute from './components/Contribute'
 import Footer from './components/Footer'
 import FeaturedCarousel from './components/FeaturedCarousel'
+import ScholarTubers from './components/ScholarTubers'
 
 const FEATURED_IDS = ['ST-008', 'ST-175', 'ST-354', 'ST-083', 'ST-344']
 const featuredResources = FEATURED_IDS.map((id) => resources.find((resource) => resource.id === id)).filter(Boolean)
@@ -39,6 +40,15 @@ export default function App() {
     })
   }
 
+  function exploreScholarTuber(name) {
+    setQuery(name)
+    setFormat('All')
+    setFocus('All')
+    requestAnimationFrame(() => {
+      document.querySelector('#library')?.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
+
   return (
     <>
       <Header query={query} setQuery={setQuery} onFormatSelect={selectFormat} />
@@ -60,6 +70,7 @@ export default function App() {
             <div className="shell"><FeaturedCarousel resources={featuredResources} /></div>
           </section>
         ) : null}
+        <ScholarTubers resources={resources} onExplore={exploreScholarTuber} />
         <Directions setFocus={setFocus} resources={resources} />
         <Curation />
         <Contribute resources={resources} />
