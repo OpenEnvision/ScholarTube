@@ -8,7 +8,7 @@ import ResourceCard from './ResourceCard'
 import ResourceDetail from './ResourceDetail'
 
 const formats = ['All', 'Interview', 'Course', 'Talk']
-const focusAreas = ['All', 'World Model', 'Agent', 'Vision', 'Robotics', 'Other']
+const focusAreas = ['All', 'World Model', 'Agent', 'Vision', 'Robotics', 'Other', 'How to Research']
 
 const formatLabels = {
   All: 'All',
@@ -24,6 +24,7 @@ const focusLabels = {
   Vision: 'Vision',
   Robotics: 'Robotics',
   Other: 'Broader AI',
+  'How to Research': 'How to Research',
 }
 
 const broaderTopicOptions = [{ value: 'All', label: 'All broader topics' }, ...broaderTopics]
@@ -46,6 +47,7 @@ const platformOptions = [
   { value: 'YouTube', label: 'YouTube' },
   { value: 'Bilibili', label: 'Bilibili' },
   { value: 'Conference Site', label: 'Conference sites' },
+  { value: 'Official Site', label: 'Official sites' },
 ]
 
 const durationOptions = [
@@ -189,7 +191,7 @@ function FilterMenu({ label, icon: Icon, options, value, onChange }) {
   )
 }
 
-export default function Library({ resources, query, setQuery, format, setFormat, focus, setFocus }) {
+export default function Library({ resources, query, setQuery, format, setFormat, focus, setFocus, workspace, actions }) {
   const [language, setLanguage] = useState(() => initialOption('language', languageOptions))
   const [platform, setPlatform] = useState(() => initialOption('platform', platformOptions))
   const [duration, setDuration] = useState(() => initialOption('duration', durationOptions))
@@ -203,6 +205,9 @@ export default function Library({ resources, query, setQuery, format, setFormat,
   const [view, setView] = useState(() => new URLSearchParams(window.location.search).get('view') === 'list' ? 'list' : 'grid')
   const [selectedResource, setSelectedResource] = useState(null)
   const [selectedSeries, setSelectedSeries] = useState(null)
+  const [researchOnly, setResearchOnly] = useState(false)
+  const [tierAOnly, setTierAOnly] = useState(false)
+  const [subtitleOnly, setSubtitleOnly] = useState(false)
   const resultsRef = useRef(null)
 
   const filtered = useMemo(() => {
@@ -213,15 +218,18 @@ export default function Library({ resources, query, setQuery, format, setFormat,
       (language === 'All' || resource.language === language) &&
       (platform === 'All' || resource.platform === platform) &&
       matchesDuration(resource, duration) &&
+      (!researchOnly || resource.recommendation === 'Core') &&
+      (!tierAOnly || resource.sourceTier?.startsWith('A |')) &&
+      (!subtitleOnly || resource.subtitlesVerified) &&
       matchesSearch(resource, query)
     ))
     return sortResources(matches, sort)
-  }, [resources, broaderTopic, duration, format, focus, language, platform, query, sort])
+  }, [resources, broaderTopic, duration, format, focus, language, platform, query, researchOnly, sort, subtitleOnly, tierAOnly])
   const entries = useMemo(() => groupResourceSeries(filtered), [filtered])
   const totalPages = Math.max(1, Math.ceil(entries.length / pageSize))
   const currentPage = Math.min(page, totalPages)
   const pageEntries = entries.slice((currentPage - 1) * pageSize, currentPage * pageSize)
-  const filterState = `${duration}-${format}-${focus}-${broaderTopic}-${language}-${platform}-${query}-${sort}`
+  const filterState = `${duration}-${format}-${focus}-${broaderTopic}-${language}-${platform}-${query}-${sort}-${researchOnly}-${tierAOnly}-${subtitleOnly}`
   const previousFilterState = useRef(filterState)
 
   useEffect(() => {
@@ -261,6 +269,9 @@ export default function Library({ resources, query, setQuery, format, setFormat,
     setDuration('All')
     setSort('curated')
     setBroaderTopic('All')
+    setResearchOnly(false)
+    setTierAOnly(false)
+    setSubtitleOnly(false)
     setPage(1)
   }
 
@@ -282,7 +293,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
         <div className="section-heading section-heading--row">
           <div>
             <p className="section-kicker">The index</p>
-            <h2>Explore 860 resources</h2>
+            <h2>Explore {resources.length} resources</h2>
           </div>
           <p>Find the right depth, format, and research direction without losing the source.</p>
         </div>
@@ -375,6 +386,12 @@ export default function Library({ resources, query, setQuery, format, setFormat,
               </div>
             )}
           </div>
+          <div className="research-mode" aria-label="Researcher mode filters">
+            <span>Researcher mode</span>
+            <button type="button" className={researchOnly ? 'is-active' : ''} onClick={() => setResearchOnly((value) => !value)}>Core only</button>
+            <button type="button" className={tierAOnly ? 'is-active' : ''} onClick={() => setTierAOnly((value) => !value)}>Tier A</button>
+            <button type="button" className={subtitleOnly ? 'is-active' : ''} onClick={() => setSubtitleOnly((value) => !value)}>Subtitles</button>
+          </div>
         </div>
 
         <div className="results-bar" aria-live="polite" ref={resultsRef}>
@@ -383,7 +400,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
             {entries.length !== filtered.length && ` · ${entries.length} ${entries.length === 1 ? 'entry' : 'entries'} after series grouping`}
           </span>
           <div className="results-actions">
-            {(query || format !== 'All' || focus !== 'All' || broaderTopic !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All') && (
+            {(query || format !== 'All' || focus !== 'All' || broaderTopic !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All' || researchOnly || tierAOnly || subtitleOnly) && (
               <button type="button" onClick={resetFilters}>Clear filters</button>
             )}
             <button type="button" onClick={() => exportMarkdown(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as Markdown`}>
@@ -438,7 +455,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
           </div>
         )}
       </div>
-      {selectedResource && <ResourceDetail resource={selectedResource} onClose={() => setSelectedResource(null)} />}
+      {selectedResource && <ResourceDetail resource={selectedResource} resources={resources} workspace={workspace} actions={actions} onClose={() => setSelectedResource(null)} onOpenResource={setSelectedResource} />}
       {selectedSeries && <CourseSeriesDetail series={selectedSeries} onClose={() => setSelectedSeries(null)} />}
     </section>
   )

@@ -67,6 +67,23 @@ export function CheckIcon() {
   )
 }
 
+export function BookmarkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M6.5 4.5h11v15l-5.5-3.7-5.5 3.7v-15Z" />
+    </svg>
+  )
+}
+
+export function QueueIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <path d="M8 7h11M8 12h11M8 17h7" />
+      <path d="M4.5 7h.01M4.5 12h.01M4.5 17h.01" strokeWidth="3" />
+    </svg>
+  )
+}
+
 export function GlobeIcon() {
   return (
     <svg viewBox="0 0 24 24" {...iconProps}>
@@ -143,6 +160,17 @@ export function ListIcon() {
     <svg viewBox="0 0 24 24" {...iconProps}>
       <path d="M8 6h12M8 12h12M8 18h12" />
       <path d="M4 6h.01M4 12h.01M4 18h.01" strokeWidth="2.8" />
+    </svg>
+  )
+}
+
+export function TreeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" {...iconProps}>
+      <rect x="2.5" y="9.5" width="6" height="5" rx="1" />
+      <rect x="15.5" y="3.5" width="6" height="5" rx="1" />
+      <rect x="15.5" y="15.5" width="6" height="5" rx="1" />
+      <path d="M8.5 12h3.5V6h3.5M12 12v6h3.5" />
     </svg>
   )
 }

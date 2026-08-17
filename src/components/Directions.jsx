@@ -31,6 +31,12 @@ const directionDefinitions = [
     label: 'Broader AI',
     copy: 'Foundations, AI systems, NLP, industry, social impact, and research frontiers.',
   },
+  {
+    id: 'How to Research',
+    number: '06',
+    label: 'How to Research',
+    copy: 'Problem finding, literature review, experimental rigor, writing, peer review, and research communication.',
+  },
 ]
 
 export default function Directions({ setFocus, resources }) {
@@ -58,7 +64,7 @@ export default function Directions({ setFocus, resources }) {
             <p className="section-kicker">Research directions</p>
             <h2>Enter through the question you’re working on.</h2>
           </div>
-          <p>Five directions form a path into the index, with Broader AI refined into six focused secondary topics.</p>
+          <p>Six directions connect field knowledge with the craft of doing careful, communicable research.</p>
         </div>
 
         <div className="direction-list">
