@@ -17,7 +17,7 @@
   <a href="https://github.com/OpenEnvision/ScholarTube/issues/new">Submit a resource</a>
 </p>
 
-![ScholarTube interface showing the current 860-resource index](./assets/scholartube-preview.png)
+![ScholarTube interface showing the ScholarTube resource index](./assets/scholartube-preview.png)
 
 ## Abstract
 
@@ -59,16 +59,17 @@ ScholarTube organizes the index around the question a researcher is working on, 
 | Agents | Tool use, memory, orchestration, autonomy, reasoning, and agent evaluation | 167 |
 | Vision | Perception, multimodal understanding, generation, 3D vision, and video systems | 118 |
 | Robotics | Robot learning, control, manipulation, embodied intelligence, and grounded action | 181 |
-| Broader AI | Foundations, AI systems, NLP, industry, social impact, and research frontiers | 322 |
+| Broader AI | Foundations, AI systems, NLP, industry, social impact, and research frontiers | 321 |
+| How to Research | Problem finding, literature review, experimental design, evaluation, writing, peer review, and research communication | 30 |
 
-The four priority areas are intentionally complemented by a broader layer. This keeps foundational courses and cross-cutting systems material discoverable without forcing them into an inaccurate specialist category.
+The four priority areas are intentionally complemented by Broader AI and How to Research. This keeps foundational, cross-cutting, and research-method material discoverable without forcing it into an inaccurate specialist category.
 
 ## Discovery experience
 
 The web interface is built for both focused retrieval and open-ended exploration:
 
 - Full-text search across titles, speakers, channels, domains, keywords, formats, languages, and series.
-- Filters for format, research direction, broader topic, language, platform, and duration.
+- Filters for format, research direction, broader topic, language, platform (including official course sites), and duration.
 - Curated, popularity, and duration-based sorting.
 - Grid and compact-list views with paginated results.
 - Explicit course and interview series, with ordered episode-level detail.
@@ -120,6 +121,7 @@ The [`data`](./data) directory contains the same collection in three working for
 | [`scholar_tube_resources.csv`](./data/scholar_tube_resources.csv) | Flat, portable table for analysis and import |
 | [`scholar_tube_seed_list.xlsx`](./data/scholar_tube_seed_list.xlsx) | Formatted workbook with overview, filters, indexes, and editorial guidance |
 | [`metadata_verification_report.json`](./data/metadata_verification_report.json) | Machine-readable verification summary |
+| [`how_to_research_curation_2026-08-17.md`](./data/how_to_research_curation_2026-08-17.md) | Source mix, coverage map, reclassifications, and verification notes for the How to Research direction |
 
 Interface labels, taxonomy, and editorial metadata are written in English. Original titles, channel names, and personal names remain in their source language to preserve searchability and provenance.
 

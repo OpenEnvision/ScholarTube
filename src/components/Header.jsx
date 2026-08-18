@@ -32,6 +32,7 @@ export default function Header({ query, setQuery, onFormatSelect }) {
 
         <nav className={`main-nav ${open ? 'main-nav--open' : ''}`} aria-label="Primary navigation">
           <a href="#library" onClick={() => setOpen(false)}>Discover</a>
+          <a href="#learning" onClick={() => setOpen(false)}>My learning</a>
           {formatLinks.map(([label, value]) => (
             <a
               href="#library"

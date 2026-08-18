@@ -38,7 +38,7 @@ function PlayControlIcon() {
   )
 }
 
-export default function FeaturedCarousel({ resources }) {
+export default function FeaturedCarousel({ resources, totalCount }) {
   const slideCount = resources.length + 1
   const [activeSlide, setActiveSlide] = useState(0)
   const [playingVideo, setPlayingVideo] = useState(0)
@@ -118,7 +118,7 @@ export default function FeaturedCarousel({ resources }) {
           <div className="featured-promo__copy">
             <Brand inverse />
             <h2>Research knowledge,<br />in motion.</h2>
-            <p>860 source-linked videos. One curated path through the ideas shaping intelligent systems.</p>
+            <p>{totalCount} source-linked videos. One curated path through the ideas shaping intelligent systems.</p>
             <a className="featured-promo__action" href="#library">
               Explore the index <ArrowIcon />
             </a>

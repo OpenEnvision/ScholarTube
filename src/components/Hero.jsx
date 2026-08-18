@@ -1,6 +1,8 @@
 import { ArrowIcon } from '../icons'
 
-export default function Hero({ children }) {
+export default function Hero({ children, resources }) {
+  const countBySection = (section) => resources.filter((resource) => resource.section === section).length
+
   return (
     <section className="hero" id="top">
       <div className={`hero-grid shell${children ? '' : ' hero-grid--compact'}`}>
@@ -17,10 +19,10 @@ export default function Hero({ children }) {
             <a className="button button--text" href="#curation">How we curate</a>
           </div>
           <p className="hero-facts">
-            <span><b>860</b> verified resources</span>
-            <span><b>149</b> interviews</span>
-            <span><b>399</b> courses</span>
-            <span><b>312</b> talks</span>
+            <span><b>{resources.length}</b> verified resources</span>
+            <span><b>{countBySection('Interview')}</b> interviews</span>
+            <span><b>{countBySection('Course')}</b> courses</span>
+            <span><b>{countBySection('Talk')}</b> talks</span>
           </p>
         </div>
 
