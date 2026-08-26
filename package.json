@@ -7,8 +7,17 @@
     "dev": "vite",
     "build": "vite build --base=./ && node scripts/publish-root.mjs",
     "preview": "vite preview",
+    "courses:complete": "node scripts/add-official-course-completions-2026-08-25.mjs",
+    "podcasts:apply": "node scripts/add-quality-podcasts-2026-08-25.mjs",
     "series:apply": "node scripts/apply-course-series.mjs",
-    "verify:metadata": "node scripts/verify-resource-metadata.mjs"
+    "taxonomy:apply": "node scripts/apply-taxonomy-fixes.mjs",
+    "notes:apply": "node scripts/apply-editorial-notes.mjs",
+    "curation:apply": "npm run taxonomy:apply && npm run series:apply && npm run hygiene:apply && npm run notes:apply",
+    "hygiene:apply": "node scripts/apply-metadata-hygiene.mjs",
+    "test:detail": "node scripts/test-resource-detail.mjs",
+    "test:paths": "node scripts/test-learning-paths.mjs",
+    "verify:metadata": "node scripts/verify-resource-metadata.mjs",
+    "data:add-2026-08-25": "node scripts/add-world-models-research-craft-2026-08-25.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

@@ -359,7 +359,7 @@ export default function PathGraph({ resources, activeCluster, onConcept, onClust
       <div className="path-graph__bar">
         <div>
           <p className="mini-label">Skill tree</p>
-          <p className="path-graph__lede">{conceptCount} topics. Click a dot and the map travels to it; from there follow an arrow outward to whatever builds on it.</p>
+          <p className="path-graph__lede">{conceptCount} topics, with prerequisites nearer the centre. Click a dot and the map travels to it; then follow an arrow outward to what builds on it.</p>
         </div>
         <div className="path-graph__legend">
           <span className="is-next"><svg viewBox="0 0 44 12" aria-hidden="true"><path d="M2 6h30" /><path d="m32 2 8 4-8 4z" className="head" /></svg> Then learn</span>
@@ -529,7 +529,7 @@ function SelectedCard({ node, steps, onTravel, onOpen, onIndex, onClose }) {
       <button type="button" className="graph-card__close" onClick={onClose} aria-label="Close">×</button>
       <p className="graph-card__kicker">{kicker}</p>
       <strong>{node.label}</strong>
-      <p className="graph-card__blurb">{concept?.blurb || node.cluster?.blurb || 'Every branch of the index starts here.'}</p>
+      <p className="graph-card__blurb">{concept?.blurb || node.cluster?.blurb || 'Every branch of the index grows from this centre. Pick one and follow its rings outward.'}</p>
 
       {steps.before.length ? (
         <div className="graph-card__row">

@@ -1,4 +1,4 @@
-import { formatDuration } from './resource-utils.js'
+import { formatDuration, getFormatFamily } from './resource-utils.js'
 import { formatDate, getResourceDetail } from './resource-detail-utils.js'
 
 function csvCell(value) {
@@ -32,12 +32,13 @@ export function buildMarkdown(resources) {
 
   resources.forEach((resource) => {
     const detail = getResourceDetail(resource)
+    const family = getFormatFamily(resource)
     lines.push(
       `## ${resource.title}`,
       '',
       `- Source: [${resource.platform}](${resource.url})`,
       `- Speaker / channel: ${resource.speaker === 'To be added' ? resource.channel : resource.speaker} / ${resource.channel}`,
-      `- Format: ${resource.section}`,
+      `- Format: ${family === resource.section ? resource.section : `${resource.section} (${family})`}`,
       ...(resource.seriesTitle ? [`- Series: ${resource.seriesTitle} (#${resource.seriesOrder})`] : []),
       `- Topic: ${resource.focusArea === 'Other' ? resource.domain : resource.focusArea}`,
       `- Language: ${resource.language}`,
@@ -58,7 +59,7 @@ export function exportMarkdown(resources) {
 
 export function buildCsv(resources) {
   const headers = [
-    'id', 'title', 'url', 'platform', 'format', 'series', 'seriesOrder', 'speaker', 'channel', 'topic',
+    'id', 'title', 'url', 'platform', 'format', 'formatFamily', 'series', 'seriesOrder', 'speaker', 'channel', 'topic',
     'language', 'duration', 'publishedAt', 'lastVerifiedAt', 'recommendation', 'whyWatch',
   ]
   const rows = resources.map((resource) => {
@@ -69,6 +70,7 @@ export function buildCsv(resources) {
       resource.url,
       resource.platform,
       resource.section,
+      getFormatFamily(resource),
       resource.seriesTitle,
       resource.seriesOrder,
       resource.speaker === 'To be added' ? '' : resource.speaker,

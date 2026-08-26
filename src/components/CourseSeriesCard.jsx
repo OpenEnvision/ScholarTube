@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ExternalIcon, PlayIcon } from '../icons'
 import { formatDuration, formatViews, getCoverTheme, getDisplayTopic, getThumbnail } from '../resource-utils'
+import { isPodcastResource } from '../resource-detail-utils'
 
 function uniqueValues(resources, field) {
   return [...new Set(resources.map((resource) => resource[field]).filter(Boolean))]
@@ -18,9 +19,12 @@ export default function CourseSeriesCard({ series, index, onOpen }) {
   const languages = uniqueValues(series.resources, 'language')
   const sections = uniqueValues(series.resources, 'section')
   const focusAreas = [...new Set(series.resources.map(getDisplayTopic))]
+  const isPodcast = series.resources.some(isPodcastResource)
+  const isCourse = !isPodcast && sections.length === 1 && sections[0] === 'Course'
   const sourceLabel = channels.length === 1 ? channels[0] : `${channels.length} publishers`
-  const videoLabel = `${series.resources.length} ${series.resources.length === 1 ? 'video' : 'videos'}`
-  const seriesLabel = sections.length === 1 ? `${sections[0]} series` : 'Program series'
+  const episodeWord = isPodcast ? 'episode' : isCourse ? 'lecture' : 'video'
+  const videoLabel = `${series.resources.length} ${series.resources.length === 1 ? episodeWord : `${episodeWord}s`}`
+  const seriesLabel = isPodcast ? 'Podcast series' : sections.length === 1 ? `${sections[0]} series` : 'Program series'
 
   return (
     <article className="resource-card series-card">
@@ -63,7 +67,7 @@ export default function CourseSeriesCard({ series, index, onOpen }) {
           href={sourceResource.url}
           target="_blank"
           rel="noreferrer"
-          aria-label={`Watch the first video in ${series.title} at source`}
+          aria-label={`Watch the first ${episodeWord} in ${series.title} on its canonical host`}
         >
           Watch at source <ExternalIcon />
         </a>

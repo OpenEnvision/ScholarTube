@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { ExternalIcon, PlayIcon } from '../icons'
 import { formatDuration, formatViews, getCoverTheme, getDisplayTopic, getThumbnail } from '../resource-utils'
+import { isPodcastResource } from '../resource-detail-utils'
 
 export default function ResourceCard({ resource, index, onOpen }) {
   const [imageFailed, setImageFailed] = useState(false)
   const thumbnail = getThumbnail(resource)
   const displayTopic = getDisplayTopic(resource)
+  const isPodcast = isPodcastResource(resource)
 
   return (
     <article className="resource-card">
@@ -32,7 +34,10 @@ export default function ResourceCard({ resource, index, onOpen }) {
       </button>
 
       <div className="resource-meta-top">
-        <span>{resource.section}</span>
+        <span title={resource.recommendation === 'Core' ? 'Core: a suggested starting point in the index' : undefined}>
+          {isPodcast ? 'Podcast' : resource.section}
+          {resource.recommendation === 'Core' ? ' · Core' : ''}
+        </span>
         <span>{resource.language}</span>
       </div>
       <h3>

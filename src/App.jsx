@@ -9,11 +9,14 @@ import Contribute from './components/Contribute'
 import Footer from './components/Footer'
 import FeaturedCarousel from './components/FeaturedCarousel'
 import ScholarTubers from './components/ScholarTubers'
+import PodcastShows from './components/PodcastShows'
 import LearningWorkbench from './components/LearningWorkbench'
 import ResourceDetail from './components/ResourceDetail'
 import { useLearningWorkspace } from './learning-workspace'
 
-const FEATURED_IDS = ['ST-008', 'ST-175', 'ST-354', 'ST-083', 'ST-344']
+// ST-001 (Karpathy on Lex Fridman) and ST-942 (Saining Xie marathon on 张小珺 Podcast)
+// keep flagship podcasts in the featured rotation alongside a talk, course, and interview.
+const FEATURED_IDS = ['ST-008', 'ST-001', 'ST-175', 'ST-083', 'ST-942']
 const featuredResources = FEATURED_IDS.map((id) => resources.find((resource) => resource.id === id)).filter(Boolean)
 
 function useMediaQuery(query) {
@@ -32,7 +35,7 @@ function useMediaQuery(query) {
 export default function App() {
   const params = new URLSearchParams(window.location.search)
   const [query, setQuery] = useState(() => params.get('q') || '')
-  const [format, setFormat] = useState(() => ['Interview', 'Course', 'Talk'].includes(params.get('format')) ? params.get('format') : 'All')
+  const [format, setFormat] = useState(() => ['Interview', 'Podcast', 'Course', 'Talk'].includes(params.get('format')) ? params.get('format') : 'All')
   const [focus, setFocus] = useState(() => ['World Model', 'Agent', 'Vision', 'Robotics', 'Other', 'How to Research'].includes(params.get('focus')) ? params.get('focus') : 'All')
   const [workspaceResource, setWorkspaceResource] = useState(null)
   const isMobile = useMediaQuery('(max-width: 600px)')
@@ -106,6 +109,7 @@ export default function App() {
             <div className="shell"><FeaturedCarousel resources={featuredResources} totalCount={resources.length} /></div>
           </section>
         ) : null}
+        <PodcastShows resources={resources} onExplore={exploreScholarTuber} />
         <ScholarTubers resources={resources} onExplore={exploreScholarTuber} />
         <Directions setFocus={setFocus} resources={resources} />
         <Curation />

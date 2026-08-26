@@ -44,11 +44,13 @@ export default function Contribute({ resources }) {
       '',
       '## Review checklist',
       '',
-      '- [ ] The source is publicly accessible',
-      '- [ ] Metadata and canonical host have been checked',
-      '- [ ] Technical value and durability have been reviewed',
+      '- [ ] Source is publicly accessible on its canonical host',
+      '- [ ] Speaker, channel, institution, or venue verified',
+      '- [ ] Technical value reviewed: teaches a mechanism, method, result, or research lesson',
+      '- [ ] Durability and completeness confirmed (substantive recording, not a teaser or clip)',
+      '- [ ] Direction, domain, and keywords assigned',
       '',
-      '_Submitted from the ScholarTube contribution form._',
+      '_Submitted from the ScholarTube contribution form after an automatic duplicate check._',
     ].join('\n')
     const params = new URLSearchParams({
       title: `[Resource submission] ${url.trim()}`,
@@ -69,8 +71,14 @@ export default function Contribute({ resources }) {
       <div className="contribute-grid shell">
         <div className="contribute-intro">
           <p className="section-kicker">Open index</p>
-          <h2>A lecture worth preserving?</h2>
-          <p>Recommend a public interview, course, or talk. Each submission becomes a trackable GitHub issue for editorial review.</p>
+          <h2>A recording worth preserving?</h2>
+          <p>
+            Recommend a public interview, podcast episode, course, or talk. The form checks the
+            canonical YouTube or Bilibili identifier against the current corpus — duplicates are
+            caught before a GitHub issue is prepared — and every submission is reviewed on the
+            same five dimensions as the rest of the index: technical value, source fidelity,
+            durability, completeness, and taxonomic fit.
+          </p>
         </div>
 
         <form className="contribute-form" onSubmit={handleSubmit}>
@@ -81,7 +89,7 @@ export default function Contribute({ resources }) {
               required
               value={url}
               onChange={(event) => { setUrl(event.target.value); resetPrepared() }}
-              placeholder="https://youtube.com/..."
+              placeholder="https://youtube.com/... or https://bilibili.com/..."
             />
           </label>
           <label>
@@ -91,7 +99,7 @@ export default function Contribute({ resources }) {
               value={reason}
               minLength={30}
               onChange={(event) => { setReason(event.target.value); resetPrepared() }}
-              placeholder="What will researchers learn?"
+              placeholder="What will a researcher learn — a mechanism, method, result, or research lesson?"
             />
           </label>
           <button className="button button--primary" type="submit">
@@ -100,7 +108,7 @@ export default function Contribute({ resources }) {
           {error && <p className="form-error" role="alert">{error}</p>}
           {issueUrl && (
             <div className="submission-ready" role="status">
-              <p>Your submission passed the duplicate check. Open the issue, review it, and submit it to enter the editorial queue.</p>
+              <p>No duplicate found in the current corpus. Review the prefilled issue and submit it to enter the editorial queue in OpenEnvision/ScholarTube.</p>
               <a className="button button--outline" href={issueUrl} target="_blank" rel="noreferrer">
                 Continue on GitHub <ExternalIcon />
               </a>
@@ -111,9 +119,9 @@ export default function Contribute({ resources }) {
         <div className="source-fidelity">
           <h3>Built for source fidelity.</h3>
           <ul>
-            <li><span>01</span> Original hosts stay canonical.</li>
-            <li><span>02</span> Metadata stays searchable.</li>
-            <li><span>03</span> Editorial judgment stays visible.</li>
+            <li><span>01</span> Videos stay on their canonical hosts; ScholarTube never re-uploads media.</li>
+            <li><span>02</span> Titles, speakers, durations, and links are verified against the source and kept searchable.</li>
+            <li><span>03</span> Editorial judgment stays visible: every entry carries a source tier and a recommendation.</li>
           </ul>
         </div>
       </div>

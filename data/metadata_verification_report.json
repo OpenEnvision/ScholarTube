@@ -1,33 +1,33 @@
 {
-  "verifiedOn": "2026-08-24",
-  "total": 1025,
-  "verified": 195,
-  "partial": 733,
-  "failed": 97,
+  "verifiedOn": "2026-08-25",
+  "total": 1252,
+  "verified": 288,
+  "partial": 964,
+  "failed": 0,
   "byPlatform": {
     "YouTube": {
-      "total": 733,
+      "total": 954,
       "verified": 0,
-      "partial": 733,
+      "partial": 954,
       "failed": 0
     },
     "Bilibili": {
-      "total": 195,
-      "verified": 195,
+      "total": 201,
+      "verified": 201,
       "partial": 0,
       "failed": 0
     },
     "Conference Site": {
       "total": 84,
-      "verified": 0,
+      "verified": 84,
       "partial": 0,
-      "failed": 84
+      "failed": 0
     },
     "Official Site": {
       "total": 13,
-      "verified": 0,
-      "partial": 0,
-      "failed": 13
+      "verified": 3,
+      "partial": 10,
+      "failed": 0
     }
   },
   "failures": [

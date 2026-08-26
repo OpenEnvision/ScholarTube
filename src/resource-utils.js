@@ -4,27 +4,27 @@ const broaderTopicRules = [
   {
     id: 'Foundations',
     label: 'Foundations',
-    pattern: /foundations|reinforcement learning|neural network|representation learning|graph machine|multimodal learning|generative models|machine learning research/i,
+    pattern: /foundations|reinforcement learning|neural network|representation learning|graph machine|multimodal learning|generative models|machine learning research|diffusion|optimization|probabilistic|bayesian|causal inference/i,
   },
   {
     id: 'AI Systems',
     label: 'AI Systems',
-    pattern: /systems|infrastructure|mlops|engineering practice|developers|edge ai|tinyml|accelerated computing|product engineering/i,
+    pattern: /systems|infrastructure|mlops|engineering practice|developers|edge ai|tinyml|accelerated computing|product engineering|hardware|compilers|serving/i,
   },
   {
     id: 'NLP',
     label: 'NLP',
-    pattern: /natural language|transformer|large models|speech/i,
+    pattern: /natural language|transformer|large models|foundation models|language model|speech|llm/i,
   },
   {
     id: 'Industry',
     label: 'Industry',
-    pattern: /industry|startup|people|chinese ai researchers/i,
+    pattern: /industry|startup|people|chinese ai researchers|entrepreneur|venture|business/i,
   },
   {
     id: 'Social Impact',
     label: 'Social Impact',
-    pattern: /social impact|society|safety|trustworthy/i,
+    pattern: /social impact|society|safety|trustworthy|alignment|privacy|security|governance|policy|ethics|law\b/i,
   },
 ]
 
@@ -48,6 +48,51 @@ export function getDisplayTopic(resource) {
 
 export function getCoverTheme(resource) {
   return getDisplayTopic(resource).toLocaleLowerCase().replace(/[^a-z0-9]+/g, '-')
+}
+
+// Raw `format` labels are messy (60+ variants), so podcasts are detected in
+// code rather than rewritten in the catalog JSON.
+export function isPodcastResource(resource) {
+  return (
+    /podcast/i.test(resource.format || '') ||
+    /podcast/i.test(resource.seriesTitle || '') ||
+    /podcast/i.test(resource.channel || '') ||
+    /播客/.test(resource.title || '') ||
+    /播客/.test(resource.channel || '')
+  )
+}
+
+export function getFormatFamily(resource) {
+  return isPodcastResource(resource) ? 'Podcast' : resource.section
+}
+
+// Podcast is a lens over the catalog: the Podcast tab collects podcast shows
+// from every section, and the Interview tab keeps the conversations that are
+// not podcast shows, so nothing is double-counted between the two.
+export function matchesFormat(resource, format) {
+  if (format === 'All') return true
+  if (format === 'Podcast') return isPodcastResource(resource)
+  if (format === 'Interview') return resource.section === 'Interview' && !isPodcastResource(resource)
+  return resource.section === format
+}
+
+export function getPodcastShow(resource) {
+  return resource.seriesTitle || resource.channel || ''
+}
+
+export function getPodcastShows(resources, { limit = 8, minCount = 2 } = {}) {
+  const counts = new Map()
+
+  resources.filter(isPodcastResource).forEach((resource) => {
+    const show = getPodcastShow(resource)
+    if (show) counts.set(show, (counts.get(show) || 0) + 1)
+  })
+
+  return [...counts.entries()]
+    .filter(([, count]) => count >= minCount)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'en'))
+    .slice(0, limit)
+    .map(([name, count]) => ({ name, count }))
 }
 
 export function formatDuration(minutes = 0) {
@@ -127,8 +172,10 @@ export function matchesSearch(resource, query) {
     resource.domain,
     resource.keywords,
     resource.format,
+    getFormatFamily(resource),
     resource.language,
     resource.focusArea,
+    getDisplayTopic(resource),
     resource.seriesTitle,
   ]
     .filter(Boolean)
