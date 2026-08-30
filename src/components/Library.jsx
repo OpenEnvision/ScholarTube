@@ -1,18 +1,19 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { CheckIcon, ChevronIcon, ClockIcon, DownloadIcon, GlobeIcon, GridIcon, ListIcon, PageArrowIcon, PlatformIcon, SearchIcon, SortIcon } from '../icons'
 import { exportCsv, exportMarkdown } from '../export-utils'
-import { broaderTopics, getBroaderTopic, groupResourceSeries, matchesSearch, sortResources } from '../resource-utils'
+import { broaderTopics, getBroaderTopic, getPodcastShow, getPodcastShows, groupResourceSeries, matchesFormat, matchesSearch, sortResources } from '../resource-utils'
 import CourseSeriesCard from './CourseSeriesCard'
 import CourseSeriesDetail from './CourseSeriesDetail'
 import ResourceCard from './ResourceCard'
 import ResourceDetail from './ResourceDetail'
 
-const formats = ['All', 'Interview', 'Course', 'Talk']
+const formats = ['All', 'Interview', 'Podcast', 'Course', 'Talk']
 const focusAreas = ['All', 'World Model', 'Agent', 'Vision', 'Robotics', 'Other', 'How to Research']
 
 const formatLabels = {
   All: 'All',
   Interview: 'Interviews',
+  Podcast: 'Podcasts',
   Course: 'Courses',
   Talk: 'Talks',
 }
@@ -25,6 +26,82 @@ const focusLabels = {
   Robotics: 'Robotics',
   Other: 'Broader AI',
   'How to Research': 'How to Research',
+}
+
+// Category introductions. `copy` stands alone; `brief` composes with a focus
+// intro when both a format and a direction are active.
+const formatIntros = {
+  Interview: {
+    title: 'Interviews',
+    copy: 'Sit-down conversations with researchers — the reasoning behind the work, career context, and how ideas actually formed. Podcast shows have a tab of their own.',
+    brief: 'Researcher conversations outside the podcast shows.',
+  },
+  Podcast: {
+    title: 'Podcasts',
+    copy: 'Long-form researcher conversations from shows such as the Lex Fridman Podcast, The Robot Brains Podcast, and The TWIML AI Podcast. ScholarTube indexes and annotates the episodes; the original platforms remain the source of truth.',
+    brief: 'Long-form podcast conversations; the original platforms remain the source of truth.',
+  },
+  Course: {
+    title: 'Courses',
+    copy: 'University courses and structured tutorials, grouped into series where lectures belong together. The place to build a topic from first principles.',
+    brief: 'Structured courses and tutorials, grouped into series.',
+  },
+  Talk: {
+    title: 'Talks',
+    copy: 'Conference keynotes, research seminars, and invited talks — the format researchers use to present finished work and defend a position.',
+    brief: 'Keynotes, seminars, and invited talks.',
+  },
+}
+
+const focusIntros = {
+  'World Model': {
+    title: 'World Models',
+    copy: 'Learned simulators and predictive models of environments — temporal dynamics, planning through imagination, and spatial reasoning.',
+    brief: 'Scoped to world models: learned simulators, dynamics, and planning.',
+  },
+  Agent: {
+    title: 'Agents',
+    copy: 'Systems that act — tool use, memory, orchestration, multi-agent coordination, and the evaluations that keep them honest.',
+    brief: 'Scoped to agents: tool use, memory, orchestration, and evaluation.',
+  },
+  Vision: {
+    title: 'Vision',
+    copy: 'Perception and generation across images and video — multimodal understanding, visual representation, and generative systems.',
+    brief: 'Scoped to vision: perception, multimodal understanding, and generation.',
+  },
+  Robotics: {
+    title: 'Robotics',
+    copy: 'Embodied intelligence — manipulation, locomotion, sim-to-real transfer, and policies that turn perception into physical action.',
+    brief: 'Scoped to robotics: embodied learning from perception to action.',
+  },
+  Other: {
+    title: 'Broader AI',
+    copy: 'The wider field beyond the four named directions — foundations, AI systems, NLP, industry, social impact, and research frontiers. Use the broader-topic chips to refine.',
+    brief: 'Scoped to broader AI: foundations, systems, NLP, industry, and social impact.',
+  },
+  'How to Research': {
+    title: 'How to Research',
+    copy: 'The craft itself — finding problems, reading literature, running rigorous experiments, writing, peer review, and presenting work.',
+    brief: 'Scoped to the craft of research itself.',
+  },
+}
+
+function getLibraryIntro(format, focus) {
+  const formatIntro = formatIntros[format]
+  const focusIntro = focusIntros[focus]
+
+  if (formatIntro && focusIntro) {
+    return {
+      title: `${formatIntro.title} in ${focusIntro.title}`,
+      copy: `${formatIntro.brief} ${focusIntro.brief}`,
+    }
+  }
+  if (formatIntro) return formatIntro
+  if (focusIntro) return focusIntro
+  return {
+    title: 'The full index',
+    copy: 'Every interview, podcast, course, and talk in the collection — Core selections first, lecture and episode series grouped into single entries, every link kept on its canonical host. Pick a format tab or a research direction to narrow the slice.',
+  }
 }
 
 const broaderTopicOptions = [{ value: 'All', label: 'All broader topics' }, ...broaderTopics]
@@ -197,6 +274,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
   const [duration, setDuration] = useState(() => initialOption('duration', durationOptions))
   const [sort, setSort] = useState(() => initialOption('sort', sortOptions, 'curated'))
   const [broaderTopic, setBroaderTopic] = useState(() => initialOption('topic', broaderTopicOptions))
+  const [podcastShow, setPodcastShow] = useState(() => new URLSearchParams(window.location.search).get('show') || 'All')
   const [pageSize, setPageSize] = useState(() => {
     const value = Number(new URLSearchParams(window.location.search).get('pageSize'))
     return pageSizeOptions.some((option) => option.value === value) ? value : 20
@@ -210,9 +288,19 @@ export default function Library({ resources, query, setQuery, format, setFormat,
   const [subtitleOnly, setSubtitleOnly] = useState(false)
   const resultsRef = useRef(null)
 
+  const podcastShows = useMemo(() => getPodcastShows(resources), [resources])
+  // A shared URL can point at a show outside the top chips; surface it so the
+  // active selection stays visible.
+  const visibleShows = useMemo(() => {
+    if (podcastShow === 'All' || podcastShows.some((show) => show.name === podcastShow)) return podcastShows
+    const count = resources.filter((resource) => matchesFormat(resource, 'Podcast') && getPodcastShow(resource) === podcastShow).length
+    return [...podcastShows, { name: podcastShow, count }]
+  }, [podcastShow, podcastShows, resources])
+
   const filtered = useMemo(() => {
     const matches = resources.filter((resource) => (
-      (format === 'All' || resource.section === format) &&
+      matchesFormat(resource, format) &&
+      (format !== 'Podcast' || podcastShow === 'All' || getPodcastShow(resource) === podcastShow) &&
       (focus === 'All' || resource.focusArea === focus) &&
       (focus !== 'Other' || broaderTopic === 'All' || getBroaderTopic(resource) === broaderTopic) &&
       (language === 'All' || resource.language === language) &&
@@ -224,12 +312,13 @@ export default function Library({ resources, query, setQuery, format, setFormat,
       matchesSearch(resource, query)
     ))
     return sortResources(matches, sort)
-  }, [resources, broaderTopic, duration, format, focus, language, platform, query, researchOnly, sort, subtitleOnly, tierAOnly])
+  }, [resources, broaderTopic, duration, format, focus, language, platform, podcastShow, query, researchOnly, sort, subtitleOnly, tierAOnly])
   const entries = useMemo(() => groupResourceSeries(filtered), [filtered])
+  const intro = getLibraryIntro(format, focus)
   const totalPages = Math.max(1, Math.ceil(entries.length / pageSize))
   const currentPage = Math.min(page, totalPages)
   const pageEntries = entries.slice((currentPage - 1) * pageSize, currentPage * pageSize)
-  const filterState = `${duration}-${format}-${focus}-${broaderTopic}-${language}-${platform}-${query}-${sort}-${researchOnly}-${tierAOnly}-${subtitleOnly}`
+  const filterState = `${duration}-${format}-${focus}-${broaderTopic}-${podcastShow}-${language}-${platform}-${query}-${sort}-${researchOnly}-${tierAOnly}-${subtitleOnly}`
   const previousFilterState = useRef(filterState)
 
   useEffect(() => {
@@ -244,8 +333,12 @@ export default function Library({ resources, query, setQuery, format, setFormat,
   }, [page, totalPages])
 
   useEffect(() => {
+    if (format !== 'Podcast') setPodcastShow('All')
+  }, [format])
+
+  useEffect(() => {
     const url = new URL(window.location.href)
-    const values = { q: query, format, focus, topic: broaderTopic, language, platform, duration, sort, page: currentPage, pageSize, view }
+    const values = { q: query, format, focus, topic: broaderTopic, show: podcastShow, language, platform, duration, sort, page: currentPage, pageSize, view }
 
     Object.entries(values).forEach(([key, value]) => {
       const isDefault = value === 'All' ||
@@ -258,7 +351,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
     })
 
     window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`)
-  }, [broaderTopic, currentPage, duration, format, focus, language, pageSize, platform, query, sort, view])
+  }, [broaderTopic, currentPage, duration, format, focus, language, pageSize, platform, podcastShow, query, sort, view])
 
   function resetFilters() {
     setQuery('')
@@ -269,6 +362,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
     setDuration('All')
     setSort('curated')
     setBroaderTopic('All')
+    setPodcastShow('All')
     setResearchOnly(false)
     setTierAOnly(false)
     setSubtitleOnly(false)
@@ -298,6 +392,14 @@ export default function Library({ resources, query, setQuery, format, setFormat,
           <p>Find the right depth, format, and research direction without losing the source.</p>
         </div>
 
+        <div className="library-intro" role="note" aria-label="About the current selection">
+          <h3 className="library-intro__title">{intro.title}</h3>
+          <p className="library-intro__copy">{intro.copy}</p>
+          <p className="library-intro__count">
+            {filtered.length} {filtered.length === 1 ? 'resource' : 'resources'} in this view
+          </p>
+        </div>
+
         <div className="library-controls">
           <label className="library-search">
             <SearchIcon />
@@ -316,6 +418,8 @@ export default function Library({ resources, query, setQuery, format, setFormat,
                 type="button"
                 key={item}
                 className={format === item ? 'is-active' : ''}
+                aria-pressed={format === item}
+                aria-label={`Show ${formatLabels[item] === 'All' ? 'all formats' : formatLabels[item].toLocaleLowerCase()}`}
                 onClick={() => setFormat(item)}
               >
                 {formatLabels[item]}
@@ -385,12 +489,41 @@ export default function Library({ resources, query, setQuery, format, setFormat,
                 </div>
               </div>
             )}
+
+            {format === 'Podcast' && podcastShows.length > 0 && (
+              <div className="topic-filters show-filters" aria-label="Podcast show">
+                <span>Filter by show</span>
+                <div>
+                  <button
+                    type="button"
+                    className={podcastShow === 'All' ? 'is-active' : ''}
+                    aria-pressed={podcastShow === 'All'}
+                    aria-label="All podcast shows"
+                    onClick={() => setPodcastShow('All')}
+                  >
+                    All shows
+                  </button>
+                  {visibleShows.map((show) => (
+                    <button
+                      type="button"
+                      key={show.name}
+                      className={podcastShow === show.name ? 'is-active' : ''}
+                      aria-pressed={podcastShow === show.name}
+                      aria-label={`${show.name}, ${show.count} ${show.count === 1 ? 'episode' : 'episodes'}`}
+                      onClick={() => setPodcastShow(show.name)}
+                    >
+                      {show.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
           <div className="research-mode" aria-label="Researcher mode filters">
             <span>Researcher mode</span>
-            <button type="button" className={researchOnly ? 'is-active' : ''} onClick={() => setResearchOnly((value) => !value)}>Core only</button>
-            <button type="button" className={tierAOnly ? 'is-active' : ''} onClick={() => setTierAOnly((value) => !value)}>Tier A</button>
-            <button type="button" className={subtitleOnly ? 'is-active' : ''} onClick={() => setSubtitleOnly((value) => !value)}>Subtitles</button>
+            <button type="button" className={researchOnly ? 'is-active' : ''} aria-pressed={researchOnly} title="Only Core recommendations — the suggested starting points" onClick={() => setResearchOnly((value) => !value)}>Core only</button>
+            <button type="button" className={tierAOnly ? 'is-active' : ''} aria-pressed={tierAOnly} title="Only Tier A sources — original and official uploads" onClick={() => setTierAOnly((value) => !value)}>Tier A</button>
+            <button type="button" className={subtitleOnly ? 'is-active' : ''} aria-pressed={subtitleOnly} title="Only recordings with verified subtitles" onClick={() => setSubtitleOnly((value) => !value)}>Subtitles</button>
           </div>
         </div>
 
@@ -400,13 +533,13 @@ export default function Library({ resources, query, setQuery, format, setFormat,
             {entries.length !== filtered.length && ` · ${entries.length} ${entries.length === 1 ? 'entry' : 'entries'} after series grouping`}
           </span>
           <div className="results-actions">
-            {(query || format !== 'All' || focus !== 'All' || broaderTopic !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All' || researchOnly || tierAOnly || subtitleOnly) && (
+            {(query || format !== 'All' || focus !== 'All' || broaderTopic !== 'All' || podcastShow !== 'All' || language !== 'All' || platform !== 'All' || duration !== 'All' || researchOnly || tierAOnly || subtitleOnly) && (
               <button type="button" onClick={resetFilters}>Clear filters</button>
             )}
-            <button type="button" onClick={() => exportMarkdown(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as Markdown`}>
+            <button type="button" onClick={() => exportMarkdown(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as Markdown`} title="Download the current results as a Markdown reading list with source links">
               <DownloadIcon /> Markdown
             </button>
-            <button type="button" onClick={() => exportCsv(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as CSV`}>
+            <button type="button" onClick={() => exportCsv(filtered)} disabled={!filtered.length} aria-label={`Export ${filtered.length} results as CSV`} title="Download the current results as a CSV table for analysis or import">
               <DownloadIcon /> CSV
             </button>
             <span className="view-switcher" aria-label="Results view">
@@ -450,7 +583,7 @@ export default function Library({ resources, query, setQuery, format, setFormat,
           </>
         ) : (
           <div className="empty-state">
-            <p>No resource matches this combination yet.</p>
+            <p>No indexed resource matches this combination. Duration, platform, and the researcher-mode toggles cut deepest — loosen one of those, or start again from the full index.</p>
             <button type="button" onClick={resetFilters}>Reset the index</button>
           </div>
         )}

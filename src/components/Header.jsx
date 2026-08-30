@@ -4,6 +4,7 @@ import { MenuIcon, SearchIcon } from '../icons'
 
 const formatLinks = [
   ['Interviews', 'Interview'],
+  ['Podcasts', 'Podcast'],
   ['Courses', 'Course'],
   ['Talks', 'Talk'],
 ]
@@ -46,7 +47,7 @@ export default function Header({ query, setQuery, onFormatSelect }) {
             </a>
           ))}
           <a href="#scholartubers" onClick={goToScholarTubers}>ScholarTubers</a>
-          <a href="#curation" onClick={() => setOpen(false)}>About</a>
+          <a href="#curation" onClick={() => setOpen(false)}>Curation</a>
           <div className="mobile-nav-tools">
             <label className="mobile-nav-search">
               <SearchIcon />

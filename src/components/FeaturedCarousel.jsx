@@ -103,11 +103,15 @@ export default function FeaturedCarousel({ resources, totalCount }) {
 
         <div className="featured-video-copy" aria-live="polite" aria-hidden={isPromo}>
           <div>
-            <p>{currentVideo.platform} · {getDisplayTopic(currentVideo)} · {currentVideo.section} · {formatDuration(currentVideo.durationMinutes)}</p>
+            <p>
+              {currentVideo.speaker && currentVideo.speaker !== 'To be added' ? currentVideo.speaker : currentVideo.channel}
+              {' · '}{currentVideo.section} · {getDisplayTopic(currentVideo)} · {formatDuration(currentVideo.durationMinutes)}
+              {currentVideo.recommendation === 'Core' ? ' · Core selection' : ''}
+            </p>
             <h2>{currentVideo.title}</h2>
           </div>
-          <a href={currentVideo.url} target="_blank" rel="noreferrer" aria-label={`Watch ${currentVideo.title} at source`}>
-            <span>Watch at source</span>
+          <a href={currentVideo.url} target="_blank" rel="noreferrer" aria-label={`Watch ${currentVideo.title} on ${currentVideo.platform}`}>
+            <span>Watch on {currentVideo.platform}</span>
             <ExternalIcon />
           </a>
         </div>
@@ -118,7 +122,7 @@ export default function FeaturedCarousel({ resources, totalCount }) {
           <div className="featured-promo__copy">
             <Brand inverse />
             <h2>Research knowledge,<br />in motion.</h2>
-            <p>{totalCount} source-linked videos. One curated path through the ideas shaping intelligent systems.</p>
+            <p>{totalCount} source-linked interviews, courses, talks, and podcasts — hand-reviewed, indexed by the research question they answer, and kept on their canonical hosts.</p>
             <a className="featured-promo__action" href="#library">
               Explore the index <ArrowIcon />
             </a>
@@ -134,7 +138,7 @@ export default function FeaturedCarousel({ resources, totalCount }) {
                 type="button"
                 className={activeSlide === index ? 'is-active' : ''}
                 onClick={() => selectSlide(index)}
-                aria-label={index === 0 ? 'Show ScholarTube cover' : `Play featured video ${index}`}
+                aria-label={index === 0 ? 'Show ScholarTube cover' : `Play featured video: ${resources[index - 1].title}`}
                 aria-current={activeSlide === index ? 'true' : undefined}
               />
             ))}

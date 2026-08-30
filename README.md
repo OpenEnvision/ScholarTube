@@ -53,16 +53,16 @@ The goal is not to replace papers, course pages, conference archives, or video p
 
 ScholarTube organizes the index around the question a researcher is working on, rather than around the platform that hosts the video.
 
-The current release contains 1,025 direct videos across six research directions.
+The current release contains 1,252 direct videos across six research directions.
 
 | Direction | Scope | Resources |
 | --- | --- | ---: |
-| World Models | Learned simulators, temporal dynamics, planning, spatial reasoning, and video world models | 91 |
-| Agents | Tool use, memory, orchestration, autonomy, reasoning, and agent evaluation | 201 |
-| Vision | Perception, multimodal understanding, generation, 3D vision, and video systems | 127 |
-| Robotics | Robot learning, control, manipulation, embodied intelligence, and grounded action | 198 |
-| Broader AI | Foundations, AI systems, NLP, industry, social impact, and research frontiers | 378 |
-| How to Research | Problem finding, literature review, experimental design, evaluation, writing, peer review, and research communication | 30 |
+| World Models | Learned simulators, temporal dynamics, planning, spatial reasoning, and video world models | 128 |
+| Agents | Tool use, memory, orchestration, autonomy, reasoning, and agent evaluation | 209 |
+| Vision | Perception, multimodal understanding, generation, 3D vision, and video systems | 133 |
+| Robotics | Robot learning, control, manipulation, embodied intelligence, and grounded action | 213 |
+| Broader AI | Foundations, AI systems, NLP, industry, social impact, and research frontiers | 499 |
+| How to Research | Problem finding, literature review, experimental design, evaluation, writing, peer review, and research communication | 70 |
 
 The four priority areas are intentionally complemented by Broader AI and How to Research. This keeps foundational, cross-cutting, and research-method material discoverable without forcing it into an inaccurate specialist category.
 
@@ -74,7 +74,7 @@ The web interface is built for both focused retrieval and open-ended exploration
 - Filters for format, research direction, broader topic, language, platform (including official course sites), and duration.
 - Curated, popularity, and duration-based sorting.
 - Grid and compact-list views with paginated results.
-- Explicit course and interview series, with ordered episode-level detail.
+- Explicit course, talk, and interview series, with ordered episode-level detail.
 - Resource detail panels showing audience, rationale, provenance, dates, metadata status, and view-count snapshots.
 - ScholarTuber profiles for exploring researchers, educators, builders, and interviewers represented in the index.
 - One-click export of the current result set to Markdown or CSV.
@@ -163,10 +163,13 @@ Open the local URL printed by Vite, normally `http://127.0.0.1:5173/`.
 | `npm run dev` | Start the local development server |
 | `npm run build` | Build the Vite application and publish a self-contained root `index.html` |
 | `npm run preview` | Preview the production build locally |
-| `npm run series:apply` | Recompute explicit course and interview series metadata |
+| `npm run series:apply` | Recompute explicit course, talk, and interview series metadata |
+| `npm run taxonomy:apply` | Apply the evidence-backed section/focusArea corrections |
+| `npm run notes:apply` | Replace provenance boilerplate in `notes` with field-driven editorial notes |
+| `npm run curation:apply` | Run taxonomy, series, and notes maintenance in the correct order |
 | `npm run verify:metadata` | Recheck supported platform metadata and rewrite the verification artifacts |
 
-The two maintenance commands modify canonical data files. Review their output and diff before committing the result. Metadata verification also requires network access to the relevant public platforms.
+The maintenance commands modify canonical data files. Review their output and diff before committing the result. Metadata verification also requires network access to the relevant public platforms.
 
 ## Deployment
 

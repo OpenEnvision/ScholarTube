@@ -1,7 +1,9 @@
 import { ArrowIcon } from '../icons'
+import { isPodcastResource } from '../resource-detail-utils'
 
 export default function Hero({ children, resources }) {
   const countBySection = (section) => resources.filter((resource) => resource.section === section).length
+  const podcastCount = resources.filter(isPodcastResource).length
 
   return (
     <section className="hero" id="top">
@@ -9,8 +11,8 @@ export default function Hero({ children, resources }) {
         <div className="hero-copy">
           <h1>Watch the ideas shaping intelligent systems.</h1>
           <p className="hero-description">
-            A curated video index for researchers—source-linked interviews,
-            complete courses, and talks worth returning to.
+            A hand-curated video index for AI researchers: source-linked interviews,
+            long-form podcasts, complete course runs, and talks that stay useful long after the release cycle.
           </p>
           <div className="hero-actions">
             <a className="button button--primary" href="#library">
@@ -21,6 +23,7 @@ export default function Hero({ children, resources }) {
           <p className="hero-facts">
             <span><b>{resources.length}</b> verified resources</span>
             <span><b>{countBySection('Interview')}</b> interviews</span>
+            <span><b>{podcastCount}</b> podcast episodes</span>
             <span><b>{countBySection('Course')}</b> courses</span>
             <span><b>{countBySection('Talk')}</b> talks</span>
           </p>
@@ -32,6 +35,7 @@ export default function Hero({ children, resources }) {
       <div className="format-rail" aria-hidden="true">
         <div className="shell">
           <span>INTERVIEWS</span><i />
+          <span>PODCASTS</span><i />
           <span>COURSES</span><i />
           <span>TALKS</span><i />
           <span>CANONICAL SOURCES</span>
