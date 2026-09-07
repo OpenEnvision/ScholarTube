@@ -53,15 +53,15 @@ The goal is not to replace papers, course pages, conference archives, or video p
 
 ScholarTube organizes the index around the question a researcher is working on, rather than around the platform that hosts the video.
 
-The current release contains 1,252 direct videos across six research directions.
+The current release contains 1,301 direct videos across six research directions.
 
 | Direction | Scope | Resources |
 | --- | --- | ---: |
-| World Models | Learned simulators, temporal dynamics, planning, spatial reasoning, and video world models | 128 |
-| Agents | Tool use, memory, orchestration, autonomy, reasoning, and agent evaluation | 209 |
-| Vision | Perception, multimodal understanding, generation, 3D vision, and video systems | 133 |
-| Robotics | Robot learning, control, manipulation, embodied intelligence, and grounded action | 213 |
-| Broader AI | Foundations, AI systems, NLP, industry, social impact, and research frontiers | 499 |
+| World Models | Learned simulators, temporal dynamics, planning, spatial reasoning, and video world models | 132 |
+| Agents | Tool use, memory, orchestration, autonomy, reasoning, and agent evaluation | 242 |
+| Vision | Perception, multimodal understanding, generation, 3D vision, and video systems | 139 |
+| Robotics | Robot learning, control, manipulation, embodied intelligence, and grounded action | 220 |
+| Broader AI | Foundations, AI systems, NLP, industry, social impact, and research frontiers | 498 |
 | How to Research | Problem finding, literature review, experimental design, evaluation, writing, peer review, and research communication | 70 |
 
 The four priority areas are intentionally complemented by Broader AI and How to Research. This keeps foundational, cross-cutting, and research-method material discoverable without forcing it into an inaccurate specialist category.
