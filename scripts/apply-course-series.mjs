@@ -830,13 +830,13 @@ for (const members of assignedBySeries.values()) {
 
 const seriesSummary = [...new Set(updated.map((resource) => resource.seriesId).filter(Boolean))].map((id) => {
   const members = updated.filter((resource) => resource.seriesId === id)
-  if (members.length < 2) throw new Error(`${id} has only ${members.length} matching resource(s)`)
   const sections = [...new Set(members.map((resource) => resource.section))]
   return {
     id,
     title: members[0].seriesTitle,
     section: sections.length === 1 ? sections[0] : 'Mixed',
     resources: members.length,
+    singleton: members.length < 2,
   }
 })
 
