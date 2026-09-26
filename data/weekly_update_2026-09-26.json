@@ -1,0 +1,128 @@
+{
+  "updatedOn": "2026-09-26",
+  "uploadWindow": [
+    "2026-09-14",
+    "2026-09-26"
+  ],
+  "baseCount": 1351,
+  "removedCount": 0,
+  "addedCount": 50,
+  "addedIds": [
+    "ST-1377",
+    "ST-1378",
+    "ST-1379",
+    "ST-1380",
+    "ST-1381",
+    "ST-1382",
+    "ST-1383",
+    "ST-1384",
+    "ST-1385",
+    "ST-1386",
+    "ST-1387",
+    "ST-1388",
+    "ST-1389",
+    "ST-1390",
+    "ST-1391",
+    "ST-1392",
+    "ST-1393",
+    "ST-1394",
+    "ST-1395",
+    "ST-1396",
+    "ST-1397",
+    "ST-1398",
+    "ST-1399",
+    "ST-1400",
+    "ST-1401",
+    "ST-1402",
+    "ST-1403",
+    "ST-1404",
+    "ST-1405",
+    "ST-1406",
+    "ST-1407",
+    "ST-1408",
+    "ST-1409",
+    "ST-1410",
+    "ST-1411",
+    "ST-1412",
+    "ST-1413",
+    "ST-1414",
+    "ST-1415",
+    "ST-1416",
+    "ST-1417",
+    "ST-1418",
+    "ST-1419",
+    "ST-1420",
+    "ST-1421",
+    "ST-1422",
+    "ST-1423",
+    "ST-1424",
+    "ST-1425",
+    "ST-1426"
+  ],
+  "addedPlatforms": {
+    "YouTube": 22,
+    "Bilibili": 28
+  },
+  "addedSections": {
+    "Interview": 5,
+    "Talk": 7,
+    "Course": 38
+  },
+  "addedFocusAreas": {
+    "Agent": 21,
+    "World Model": 5,
+    "Robotics": 10,
+    "Vision": 14
+  },
+  "newTotal": 1401,
+  "verification": {
+    "youtube": "Primary watch-page title, channel, upload date and duration checked; no playback test.",
+    "bilibili": "Primary public search API metadata checked; all 28 rows remain Pending Verification for playback/page access."
+  },
+  "datePolicy": "Dates are platform upload dates, not recording dates or paper publication dates.",
+  "seriesPolicy": "Only explicitly numbered series are grouped. Alternative aspect-ratio parts within a Bilibili upload count once.",
+  "highlights": [
+    {
+      "id": "ST-1377",
+      "title": "Engineering safer AI to mitigate global risks | Yoshua Bengio",
+      "url": "https://www.youtube.com/watch?v=WZNHg9mpfco",
+      "speaker": "Yoshua Bengio; Beatrice Nolan"
+    },
+    {
+      "id": "ST-1378",
+      "title": "Google's AI Scientist Started as an Attempt to Automate Kaggle — John Platt, Google Fellow",
+      "url": "https://www.youtube.com/watch?v=2xBSGluFkG0",
+      "speaker": "John Platt"
+    },
+    {
+      "id": "ST-1379",
+      "title": "How Physical AI Learns Across Language, Video and Action — Ming-Yu Liu",
+      "url": "https://www.youtube.com/watch?v=L6tLBApQN-g",
+      "speaker": "Ming-Yu Liu"
+    },
+    {
+      "id": "ST-1380",
+      "title": "Can Rewriting an AI Agent Bend the Intelligence Curve? - Zhengyao Jiang",
+      "url": "https://www.youtube.com/watch?v=yB6_iFGTq9k",
+      "speaker": "Zhengyao Jiang"
+    },
+    {
+      "id": "ST-1381",
+      "title": "So... What Exactly is Physical AI?",
+      "url": "https://www.youtube.com/watch?v=L6bSqc5ccCw",
+      "speaker": "Daniela Rus; Russ Tedrake; John Leonard; Pras Velagapudi; Deepak Pathak"
+    },
+    {
+      "id": "ST-1395",
+      "title": "Flow matching for Beginners | @ariG23498",
+      "url": "https://www.youtube.com/watch?v=hXQZ6lyRCsI",
+      "speaker": "Aritra Roy Gosthipaty"
+    },
+    {
+      "id": "ST-1396",
+      "title": "Full Course: Spec-Driven Development with Coding Agents",
+      "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
+      "speaker": "Paul Everitt"
+    }
+  ]
+}

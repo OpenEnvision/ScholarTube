@@ -7,7 +7,8 @@ const { FileBlob, SpreadsheetFile } = artifactTool
 const projectDirectory = process.cwd()
 const inputPath = path.join(projectDirectory, 'data', 'scholar_tube_seed_list.xlsx')
 const dataPath = path.join(projectDirectory, 'data', 'scholar_tube_resources.json')
-const outputDirectory = path.join(projectDirectory, 'outputs', 'main-sync-2026-09-13')
+const updateDate = process.argv.find((arg) => /^\d{4}-\d{2}-\d{2}$/.test(arg)) || '2026-09-13'
+const outputDirectory = path.join(projectDirectory, 'outputs', `main-sync-${updateDate}`)
 const outputPath = path.join(outputDirectory, 'scholar_tube_seed_list.xlsx')
 const previewDirectory = path.join(outputDirectory, 'previews')
 
@@ -75,6 +76,12 @@ const priorityAreas = workbook.worksheets.getItem('Priority Areas')
 const domainIndex = workbook.worksheets.getItem('Domain Index')
 const fieldGuide = workbook.worksheets.getItem('Field Guide')
 
+if (process.argv.includes('--preview-only')) {
+  await savePreview(workbook, 'Overview', 'A1:L24', 'Overview-before.png')
+  console.log((await workbook.inspect({kind:'table',range:'Overview!A4:L8',include:'values,formulas',tableMaxRows:5,tableMaxCols:12,maxChars:2500})).ndjson)
+  process.exit(0)
+}
+
 const existingTable = resourcesSheet.tables.items.find((table) => table.name === 'ScholarTubeResources')
 if (!existingTable) throw new Error('ScholarTubeResources table was not found')
 existingTable.delete()
@@ -90,6 +97,12 @@ resourcesSheet.getRange(`K2:K${finalRow}`).setNumberFormat('0')
 resourcesSheet.getRange(`N2:N${finalRow}`).setNumberFormat('#,##0')
 resourcesSheet.getRange(`R2:R${finalRow}`).setNumberFormat('yyyy-mm-dd')
 resourcesSheet.getRange(`V2:V${finalRow}`).setNumberFormat('0.00')
+const firstNewIndex = resources.findIndex((resource) => resource.collectedOn === updateDate)
+if (firstNewIndex >= 0) {
+  const addedRange = resourcesSheet.getRange(`A${firstNewIndex + 2}:W${finalRow}`)
+  addedRange.format.wrapText = true
+  addedRange.format.autofitRows()
+}
 resourcesSheet.getRange('C1:C5000').format.columnWidth = 20
 const resourceTable = resourcesSheet.tables.add(`A1:W${finalRow}`, true, 'ScholarTubeResources')
 resourceTable.style = 'TableStyleMedium2'
@@ -137,7 +150,7 @@ domainIndex.getRange('A2:E250').clear({ applyTo: 'contents' })
 domainIndex.getRange(`A2:A${domainLastRow}`).values = sortedDomains.map((domain) => [domain])
 domainIndex.getRange(`B2:E${domainLastRow}`).formulas = sortedDomains.map((_, i) => { const row = i + 2; return [`=COUNTIF('Resources'!$D$2:$D$${finalRow},$A${row})`,`=COUNTIFS('Resources'!$D$2:$D$${finalRow},$A${row},'Resources'!$B$2:$B$${finalRow},C$1)`,`=COUNTIFS('Resources'!$D$2:$D$${finalRow},$A${row},'Resources'!$B$2:$B$${finalRow},D$1)`,`=COUNTIFS('Resources'!$D$2:$D$${finalRow},$A${row},'Resources'!$B$2:$B$${finalRow},E$1)`] })
 
-fieldGuide.getRange('D12').values = [['The catalog was source-audited through 2026-09-13. Public metadata is recorded conservatively; unavailable subtitle tracks remain unverified and YouTube metadata may be Partial when anti-bot checks block direct access.']]
+fieldGuide.getRange('D12').values = [[`Latest additions: ${updateDate}. Dates are platform upload dates, not event or paper dates. Metadata and playback checks are separate; Bilibili additions with blocked watch pages remain Pending Verification. See each resource for its verification scope.`]]
 await workbook.recalculate()
 const checks = [
   await workbook.inspect({ kind: 'table', range: 'Overview!A1:L24', include: 'values,formulas', tableMaxRows: 24, tableMaxCols: 12, maxChars: 7500 }),
@@ -148,7 +161,7 @@ const checks = [
 for (const check of checks) console.log(check.ndjson)
 await savePreview(workbook, 'Overview', 'A1:L24', 'Overview.png')
 await savePreview(workbook, 'Resources', 'A1:W18', 'Resources-top.png')
-await savePreview(workbook, 'Resources', `A${Math.max(2, finalRow - 20)}:W${finalRow}`, 'Resources-bottom.png')
+await savePreview(workbook, 'Resources', `G${Math.max(2, finalRow - 3)}:S${finalRow}`, 'Resources-bottom.png')
 await savePreview(workbook, 'Priority Areas', 'A1:I12', 'Priority-Areas.png')
 await savePreview(workbook, 'Domain Index', `A1:E${domainLastRow}`, 'Domain-Index.png')
 await savePreview(workbook, 'Field Guide', 'A1:D22', 'Field-Guide.png')
