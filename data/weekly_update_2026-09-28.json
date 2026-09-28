@@ -1,0 +1,73 @@
+{
+  "updatedOn": "2026-09-28",
+  "uploadWindow": [
+    "2026-09-21",
+    "2026-09-28"
+  ],
+  "baseCount": 1401,
+  "addedCount": 23,
+  "newTotal": 1424,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1427",
+    "ST-1428",
+    "ST-1429",
+    "ST-1430",
+    "ST-1431",
+    "ST-1432",
+    "ST-1433",
+    "ST-1434",
+    "ST-1435",
+    "ST-1436",
+    "ST-1437",
+    "ST-1438",
+    "ST-1439",
+    "ST-1440",
+    "ST-1441",
+    "ST-1442",
+    "ST-1443",
+    "ST-1444",
+    "ST-1445",
+    "ST-1446",
+    "ST-1447",
+    "ST-1448",
+    "ST-1449"
+  ],
+  "addedPlatforms": {
+    "YouTube": 20,
+    "Bilibili": 3
+  },
+  "addedSections": {
+    "Interview": 4,
+    "Talk": 18,
+    "Course": 1
+  },
+  "addedFocusAreas": {
+    "World Model": 1,
+    "Agent": 19,
+    "Robotics": 3
+  },
+  "datePolicy": "Incremental follow-up to the September 26 release. Upload dates are preserved, including three newly collected interviews uploaded September 21-25. No claim that collection dates are recording dates.",
+  "verification": "YouTube public watch metadata checked. Three Bilibili entries remain Pending Verification because watch-page access and playback were not verified. No video playback tests were performed.",
+  "seriesPolicy": "Latent Space interviews join the existing show. MiniLoong lesson 6 has one course series entry and is not labelled a complete course.",
+  "highlights": [
+    {
+      "id": "ST-1427",
+      "title": "Runway’s Bet Beyond Video: World Models, Robotics, and the Neural OS — Anastasis Germanidis",
+      "speaker": "Anastasis Germanidis",
+      "url": "https://www.youtube.com/watch?v=fGRd5gYhztg"
+    },
+    {
+      "id": "ST-1428",
+      "title": "The $10 Trillion Token Economy — Alex Atallah, OpenRouter & Anjney Midha, AMP",
+      "speaker": "Alex Atallah; Anjney Midha",
+      "url": "https://www.youtube.com/watch?v=dCX4PE2HxMs"
+    },
+    {
+      "id": "ST-1429",
+      "title": "Why I couldn't build Jev at OpenAI — Diogo Almeida, TypeSafe Co-founder & CEO",
+      "speaker": "Diogo Almeida",
+      "url": "https://www.youtube.com/watch?v=cFx9Z3ZXca0"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
-const out='outputs/research-2026-09-26';
+const out=`outputs/research-${process.env.SCHOLARTUBE_RESEARCH_DATE || '2026-09-26'}`;
 await fs.mkdir(out,{recursive:true});
 const get=u=>execFileSync('curl.exe',['-s','-L','--max-time','25','-A','Mozilla/5.0',u],{encoding:'utf8',maxBuffer:25e6});
 const plain=x=>x?.simpleText||x?.runs?.map(r=>r.text).join('')||'';

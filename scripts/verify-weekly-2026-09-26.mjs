@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
-const dir='outputs/research-2026-09-26';
+const dir=`outputs/research-${process.env.SCHOLARTUBE_RESEARCH_DATE || '2026-09-26'}`;
 await fs.mkdir(`${dir}/verified`,{recursive:true});
 function extract(html,key){const i=html.indexOf(key);if(i<0)return null;let start=html.indexOf('{',i+key.length),n=0,inString=false,escape=false;for(let j=start;j<html.length;j++){const c=html[j];if(inString){if(escape)escape=false;else if(c==='\\')escape=true;else if(c==='"')inString=false;}else{if(c==='"')inString=true;else if(c==='{')n++;else if(c==='}'&&--n===0)return JSON.parse(html.slice(start,j+1));}}return null;}
 const args=process.argv.slice(2);
