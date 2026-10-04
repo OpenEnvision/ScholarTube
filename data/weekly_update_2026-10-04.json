@@ -1,0 +1,100 @@
+{
+  "updatedOn": "2026-10-04",
+  "uploadWindow": [
+    "2026-09-28",
+    "2026-10-04"
+  ],
+  "baseCount": 1424,
+  "addedCount": 31,
+  "newTotal": 1455,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1450",
+    "ST-1451",
+    "ST-1452",
+    "ST-1453",
+    "ST-1454",
+    "ST-1455",
+    "ST-1456",
+    "ST-1457",
+    "ST-1458",
+    "ST-1459",
+    "ST-1460",
+    "ST-1461",
+    "ST-1462",
+    "ST-1463",
+    "ST-1464",
+    "ST-1465",
+    "ST-1466",
+    "ST-1467",
+    "ST-1468",
+    "ST-1469",
+    "ST-1470",
+    "ST-1471",
+    "ST-1472",
+    "ST-1473",
+    "ST-1474",
+    "ST-1475",
+    "ST-1476",
+    "ST-1477",
+    "ST-1478",
+    "ST-1479",
+    "ST-1480"
+  ],
+  "addedPlatforms": {
+    "YouTube": 25,
+    "Bilibili": 6
+  },
+  "addedSections": {
+    "Interview": 6,
+    "Course": 6,
+    "Talk": 19
+  },
+  "addedFocusAreas": {
+    "Agent": 24,
+    "Vision": 2,
+    "World Model": 2,
+    "Robotics": 3
+  },
+  "datePolicy": "Platform upload dates, not recording dates. Two Bilibili LeHome lessons are new mirrors of August tutorials; their uploader-supplied original dates are explicitly unverified.",
+  "verification": "YouTube public watch metadata checked. Six Bilibili entries remain Pending Verification. No playback tests performed.",
+  "seriesPolicy": "Preserved existing interview series. LeHome parts 2 and 3 share one course series; not labelled complete. Standalone tutorials are not assigned invented series.",
+  "highlights": [
+    {
+      "id": "ST-1450",
+      "title": "Recursive Language Models — Alex Zhang, MIT PhD",
+      "speaker": "Alex Zhang",
+      "url": "https://www.youtube.com/watch?v=kog7mwsDqnk"
+    },
+    {
+      "id": "ST-1451",
+      "title": "OpenAI’s New Agent Stack: Computer Use, Decisions API, UltraFast, Dots—Ari Weinstein & Nikunj Handa",
+      "speaker": "Ari Weinstein; Nikunj Handa",
+      "url": "https://www.youtube.com/watch?v=z9OkBD2-MDU"
+    },
+    {
+      "id": "ST-1452",
+      "title": "The Future of Claude Code: Mods, Mutable Software, & Multiplayer Agents — Thariq Shihipar, Anthropic",
+      "speaker": "Thariq Shihipar",
+      "url": "https://www.youtube.com/watch?v=IZAlq-V19U8"
+    },
+    {
+      "id": "ST-1453",
+      "title": "How a Voice Agent Learns the Rhythm of Conversation — Shawn Wen",
+      "speaker": "Tsung-Hsien (Shawn) Wen",
+      "url": "https://www.youtube.com/watch?v=VoAPg8Fj6-c"
+    },
+    {
+      "id": "ST-1454",
+      "title": "The Programming Language That Referees Mathematics — Leo de Moura",
+      "speaker": "Leonardo de Moura",
+      "url": "https://www.youtube.com/watch?v=ZpQFebTK75A"
+    },
+    {
+      "id": "ST-1455",
+      "title": "From deepfakes to DNA: the science of watermarking AI",
+      "speaker": "Pushmeet Kohli; Jeremy Ratcliffe; Hannah Fry",
+      "url": "https://www.youtube.com/watch?v=HIUzrxQxTtw"
+    }
+  ]
+}
