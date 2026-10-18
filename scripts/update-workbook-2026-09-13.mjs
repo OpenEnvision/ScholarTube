@@ -84,6 +84,7 @@ if (process.argv.includes('--preview-only')) {
 
 const existingTable = resourcesSheet.tables.items.find((table) => table.name === 'ScholarTubeResources')
 if (!existingTable) throw new Error('ScholarTubeResources table was not found')
+const previousResourceCount = Number(existingTable.getRange().address.match(/:W(\d+)/)?.[1]) - 1
 existingTable.delete()
 resourcesSheet.getRange('A2:W5000').clear({ applyTo: 'contents' })
 resourcesSheet.getRange('A1:W1').values = [[
@@ -97,7 +98,10 @@ resourcesSheet.getRange(`K2:K${finalRow}`).setNumberFormat('0')
 resourcesSheet.getRange(`N2:N${finalRow}`).setNumberFormat('#,##0')
 resourcesSheet.getRange(`R2:R${finalRow}`).setNumberFormat('yyyy-mm-dd')
 resourcesSheet.getRange(`V2:V${finalRow}`).setNumberFormat('0.00')
-const firstNewIndex = resources.findIndex((resource) => resource.collectedOn === updateDate)
+const datedIndex = resources.findIndex((resource) => resource.collectedOn === updateDate)
+const firstNewIndex = Number.isFinite(previousResourceCount) && previousResourceCount < resources.length
+  ? Math.min(datedIndex < 0 ? resources.length : datedIndex, previousResourceCount)
+  : datedIndex
 if (firstNewIndex >= 0) {
   const addedRange = resourcesSheet.getRange(`A${firstNewIndex + 2}:W${finalRow}`)
   addedRange.format.wrapText = true

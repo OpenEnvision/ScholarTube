@@ -1,0 +1,74 @@
+{
+  "updatedOn": "2026-10-18",
+  "uploadWindow": [
+    "2026-10-12",
+    "2026-10-18"
+  ],
+  "baseCount": 1483,
+  "addedCount": 28,
+  "newTotal": 1511,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1509",
+    "ST-1510",
+    "ST-1511",
+    "ST-1512",
+    "ST-1513",
+    "ST-1514",
+    "ST-1515",
+    "ST-1516",
+    "ST-1517",
+    "ST-1518",
+    "ST-1519",
+    "ST-1520",
+    "ST-1521",
+    "ST-1522",
+    "ST-1523",
+    "ST-1524",
+    "ST-1525",
+    "ST-1526",
+    "ST-1527",
+    "ST-1528",
+    "ST-1529",
+    "ST-1530",
+    "ST-1531",
+    "ST-1532",
+    "ST-1533",
+    "ST-1534",
+    "ST-1535",
+    "ST-1536"
+  ],
+  "addedPlatforms": {
+    "YouTube": 20,
+    "Bilibili": 8
+  },
+  "addedSections": {
+    "Interview": 2,
+    "Talk": 16,
+    "Course": 10
+  },
+  "addedFocusAreas": {
+    "Robotics": 3,
+    "Agent": 20,
+    "World Model": 3,
+    "Vision": 2
+  },
+  "datePolicy": "Platform upload dates are preserved. Includes one October 9 backfill and two newly uploaded Chinese mirrors; the NVIDIA original was uploaded August 10, while the Bang Liu recording date remains unverified.",
+  "verification": "YouTube public watch metadata checked; eight Bilibili entries remain Pending Verification. Playback and subtitle availability not tested.",
+  "seriesPolicy": "Existing Latent Space interview series preserved. Standalone workshops have no inferred course sequence.",
+  "workbookSync": "Also synchronizes the 28 resources already present in remote main but absent from the previous workbook.",
+  "highlights": [
+    {
+      "id": "ST-1509",
+      "title": "Robots That Predict the Future: Dyna-2 & Physical AI — Jason Ma, Dyna Robotics",
+      "speaker": "Jason Ma",
+      "url": "https://www.youtube.com/watch?v=BHiYomkfoGQ"
+    },
+    {
+      "id": "ST-1521",
+      "title": "Why One AI Agent Isn’t Enough (And How to Run 1,000) - CJ Avilla & Harrison Stall, Anthropic",
+      "speaker": "CJ Avilla; Harrison Stall",
+      "url": "https://www.youtube.com/watch?v=kiClTcJUnhc"
+    }
+  ]
+}
