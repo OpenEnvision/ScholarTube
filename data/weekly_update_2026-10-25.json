@@ -1,0 +1,61 @@
+{
+  "updatedOn": "2026-10-25",
+  "uploadWindow": [
+    "2026-10-19",
+    "2026-10-25"
+  ],
+  "baseCount": 1511,
+  "addedCount": 22,
+  "newTotal": 1533,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1537",
+    "ST-1538",
+    "ST-1539",
+    "ST-1540",
+    "ST-1541",
+    "ST-1542",
+    "ST-1543",
+    "ST-1544",
+    "ST-1545",
+    "ST-1546",
+    "ST-1547",
+    "ST-1548",
+    "ST-1549",
+    "ST-1550",
+    "ST-1551",
+    "ST-1552",
+    "ST-1553",
+    "ST-1554",
+    "ST-1555",
+    "ST-1556",
+    "ST-1557",
+    "ST-1558"
+  ],
+  "addedPlatforms": {
+    "YouTube": 18,
+    "Bilibili": 4
+  },
+  "addedSections": {
+    "Interview": 1,
+    "Talk": 19,
+    "Course": 2
+  },
+  "addedFocusAreas": {
+    "Agent": 19,
+    "Robotics": 2,
+    "Vision": 1
+  },
+  "datePolicy": "Platform upload dates preserved. Includes a newly collected Pi Durable tutorial uploaded October 18; the Micro Duck excerpt recording date is unverified.",
+  "verification": "YouTube public watch metadata checked; four Bilibili entries remain Pending Verification. Playback and subtitle availability not tested.",
+  "seriesPolicy": "Existing Latent Space interview series preserved. Standalone tutorials are not assigned an inferred course sequence.",
+  "scope": "World Model sources searched, but no sufficiently supported new candidate was selected this run.",
+  "highlights": [
+    {
+      "id": "ST-1537",
+      "title": "AI in NYC: How Tenex Builds an AI-Native Engineering Team — Alex Lieberman & CJ Hess",
+      "speaker": "Alex Lieberman; CJ Hess",
+      "url": "https://www.youtube.com/watch?v=Vki6cklFqxo"
+    }
+  ]
+}
