@@ -1,0 +1,80 @@
+{
+  "updatedOn": "2026-11-01",
+  "uploadWindow": [
+    "2026-10-26",
+    "2026-11-01"
+  ],
+  "baseCount": 1533,
+  "addedCount": 29,
+  "newTotal": 1562,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1559",
+    "ST-1560",
+    "ST-1561",
+    "ST-1562",
+    "ST-1563",
+    "ST-1564",
+    "ST-1565",
+    "ST-1566",
+    "ST-1567",
+    "ST-1568",
+    "ST-1569",
+    "ST-1570",
+    "ST-1571",
+    "ST-1572",
+    "ST-1573",
+    "ST-1574",
+    "ST-1575",
+    "ST-1576",
+    "ST-1577",
+    "ST-1578",
+    "ST-1579",
+    "ST-1580",
+    "ST-1581",
+    "ST-1582",
+    "ST-1583",
+    "ST-1584",
+    "ST-1585",
+    "ST-1586",
+    "ST-1587"
+  ],
+  "addedPlatforms": {
+    "YouTube": 25,
+    "Bilibili": 4
+  },
+  "addedSections": {
+    "Interview": 5,
+    "Talk": 20,
+    "Course": 4
+  },
+  "addedFocusAreas": {
+    "Agent": 23,
+    "Robotics": 4,
+    "Vision": 1,
+    "World Model": 1
+  },
+  "datePolicy": "Platform upload dates preserved. Includes two research-seminar backfills uploaded October 15 and 22. The Cewu Lu clip recording date is unverified.",
+  "verification": "YouTube public watch metadata checked; four Bilibili entries remain Pending Verification. Playback and subtitle availability not tested.",
+  "seriesPolicy": "Existing Latent Space interview series preserved. PyBullet lessons 3–5 share one course series with explicit order; parts 1–2 are not claimed to be collected.",
+  "highlights": [
+    {
+      "id": "ST-1559",
+      "title": "How Anthropic ships the #1 LLM in the World — with Katelyn Lesse and Angela Jiang",
+      "speaker": "Katelyn Lesse; Angela Jiang",
+      "url": "https://www.youtube.com/watch?v=MRQTlwcW-aQ"
+    },
+    {
+      "id": "ST-1560",
+      "title": "Why Agents Love Supabase — with Paul Copplestone and Ant Wilson",
+      "speaker": "Paul Copplestone; Ant Wilson",
+      "url": "https://www.youtube.com/watch?v=zHG6sAss_kE"
+    },
+    {
+      "id": "ST-1582",
+      "title": "Boris Ivanovic (NVIDIA) - Building Embodied Reasoning Models for Physical AI",
+      "speaker": "Boris Ivanovic",
+      "url": "https://www.youtube.com/watch?v=AKU6QQ_MtWg"
+    }
+  ]
+}
