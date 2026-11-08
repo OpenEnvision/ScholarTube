@@ -1,0 +1,90 @@
+{
+  "updatedOn": "2026-11-08",
+  "uploadWindow": [
+    "2026-11-02",
+    "2026-11-08"
+  ],
+  "baseCount": 1562,
+  "addedCount": 28,
+  "newTotal": 1590,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1588",
+    "ST-1589",
+    "ST-1590",
+    "ST-1591",
+    "ST-1592",
+    "ST-1593",
+    "ST-1594",
+    "ST-1595",
+    "ST-1596",
+    "ST-1597",
+    "ST-1598",
+    "ST-1599",
+    "ST-1600",
+    "ST-1601",
+    "ST-1602",
+    "ST-1603",
+    "ST-1604",
+    "ST-1605",
+    "ST-1606",
+    "ST-1607",
+    "ST-1608",
+    "ST-1609",
+    "ST-1610",
+    "ST-1611",
+    "ST-1612",
+    "ST-1613",
+    "ST-1614",
+    "ST-1615"
+  ],
+  "addedPlatforms": {
+    "YouTube": 24,
+    "Bilibili": 4
+  },
+  "addedSections": {
+    "Interview": 5,
+    "Talk": 15,
+    "Course": 8
+  },
+  "addedFocusAreas": {
+    "Agent": 22,
+    "Vision": 1,
+    "World Model": 1,
+    "Robotics": 4
+  },
+  "updatedExistingIds": [
+    "ST-1584",
+    "ST-1585",
+    "ST-1586"
+  ],
+  "datePolicy": "Platform upload dates preserved. PyBullet lessons 1, 2 and 6 are newly collected backfills uploaded November 1.",
+  "verification": "YouTube public watch metadata checked; four Bilibili additions remain Pending Verification. Playback and subtitle availability not tested.",
+  "seriesPolicy": "PyBullet lessons 1–7 now share the existing series in explicit lesson order. Updated three existing lesson notes to reflect the expanded collection; no complete-course claim.",
+  "highlights": [
+    {
+      "id": "ST-1591",
+      "title": "⚡️ The 2026 Software Factory Infra Stack — Zach Lloyd, Warp.dev",
+      "speaker": "Zach Lloyd",
+      "url": "https://www.youtube.com/watch?v=LL0YmIyBKSU"
+    },
+    {
+      "id": "ST-1592",
+      "title": "Building Legal Agents When You Can't See the Data — Jacob Lauritzen, CTO of Legora",
+      "speaker": "Jacob Lauritzen",
+      "url": "https://www.youtube.com/watch?v=bJBEFzlKPoQ"
+    },
+    {
+      "id": "ST-1605",
+      "title": "Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic",
+      "speaker": "Lance Martin",
+      "url": "https://www.youtube.com/watch?v=ys6YQ2yfBpM"
+    },
+    {
+      "id": "ST-1611",
+      "title": "Kensuke Nakamura (CMU) - Safety in a Learned World: How can world models help keep robots safe?",
+      "speaker": "Kensuke Nakamura",
+      "url": "https://www.youtube.com/watch?v=0Wsk-VZum_I"
+    }
+  ]
+}

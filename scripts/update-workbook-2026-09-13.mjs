@@ -2,7 +2,8 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
-const artifactTool = await import(pathToFileURL('C:/Users/dyden/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs'))
+const artifactToolPath = process.env.SCHOLARTUBE_ARTIFACT_TOOL_PATH || 'C:/Users/dyden/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs'
+const artifactTool = await import(pathToFileURL(artifactToolPath))
 const { FileBlob, SpreadsheetFile } = artifactTool
 const projectDirectory = process.cwd()
 const inputPath = path.join(projectDirectory, 'data', 'scholar_tube_seed_list.xlsx')
@@ -85,6 +86,10 @@ if (process.argv.includes('--preview-only')) {
 const existingTable = resourcesSheet.tables.items.find((table) => table.name === 'ScholarTubeResources')
 if (!existingTable) throw new Error('ScholarTubeResources table was not found')
 const previousResourceCount = Number(existingTable.getRange().address.match(/:W(\d+)/)?.[1]) - 1
+const previousNotes = Number.isFinite(previousResourceCount)
+  ? resourcesSheet.getRange(`S2:S${previousResourceCount + 1}`).values : []
+const changedNoteRows = resources.slice(0, previousResourceCount).flatMap((resource, index) =>
+  previousNotes[index]?.[0] !== resource.notes ? [index + 2] : [])
 existingTable.delete()
 resourcesSheet.getRange('A2:W5000').clear({ applyTo: 'contents' })
 resourcesSheet.getRange('A1:W1').values = [[
@@ -107,6 +112,7 @@ if (firstNewIndex >= 0) {
   addedRange.format.wrapText = true
   addedRange.format.autofitRows()
 }
+for (const row of changedNoteRows) resourcesSheet.getRange(`A${row}:W${row}`).format.autofitRows()
 resourcesSheet.getRange('C1:C5000').format.columnWidth = 20
 const resourceTable = resourcesSheet.tables.add(`A1:W${finalRow}`, true, 'ScholarTubeResources')
 resourceTable.style = 'TableStyleMedium2'
