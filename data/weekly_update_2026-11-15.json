@@ -1,0 +1,68 @@
+{
+  "updatedOn": "2026-11-15",
+  "uploadWindow": [
+    "2026-11-09",
+    "2026-11-15"
+  ],
+  "baseCount": 1590,
+  "addedCount": 18,
+  "newTotal": 1608,
+  "removedCount": 0,
+  "addedIds": [
+    "ST-1616",
+    "ST-1617",
+    "ST-1618",
+    "ST-1619",
+    "ST-1620",
+    "ST-1621",
+    "ST-1622",
+    "ST-1623",
+    "ST-1624",
+    "ST-1625",
+    "ST-1626",
+    "ST-1627",
+    "ST-1628",
+    "ST-1629",
+    "ST-1630",
+    "ST-1631",
+    "ST-1632",
+    "ST-1633"
+  ],
+  "addedPlatforms": {
+    "YouTube": 15,
+    "Bilibili": 3
+  },
+  "addedSections": {
+    "Course": 7,
+    "Talk": 9,
+    "Interview": 2
+  },
+  "addedFocusAreas": {
+    "Agent": 14,
+    "Robotics": 2,
+    "World Model": 1,
+    "Vision": 1
+  },
+  "verification": "YouTube watch-page and Bilibili video-detail metadata checked. Playback and subtitles not tested.",
+  "seriesPolicy": "Stanford CS329Z lectures 1–6 share one ordered series; CME295 Autumn 2026 remains separate from Autumn 2025.",
+  "highlights": [
+    {
+      "id": "ST-1616",
+      "title": "What Are AI Agents? Agentic Systems Explained | Stanford CS329Z Lecture 1 with Diyi Yang",
+      "speaker": "Diyi Yang",
+      "url": "https://www.youtube.com/watch?v=DGI4vucR71w"
+    },
+    {
+      "id": "ST-1623",
+      "title": "Haruki Nishimura (TRI) - Towards Trustworthy Deployment of Large Behavior Models",
+      "speaker": "Haruki Nishimura",
+      "url": "https://www.youtube.com/watch?v=ir0k2gX5jtE"
+    },
+    {
+      "id": "ST-1624",
+      "title": "Rethinking Claude Code Best Practices — Lydia Hallie, Anthropic",
+      "speaker": "Lydia Hallie",
+      "url": "https://www.youtube.com/watch?v=vlfCjWuv4es"
+    }
+  ]
+}
