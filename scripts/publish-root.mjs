@@ -1,8 +1,16 @@
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
+// Publishes the Vite build to the repository root, which is what GitHub Pages
+// serves. The JavaScript and CSS stay in their own content-hashed files under
+// `assets/` instead of being inlined into `index.html`: GitHub Pages only caches
+// HTML for ten minutes, so an inlined bundle made every visit download and parse
+// the whole application and catalog again. Hashed files are fetched once and
+// reused until their contents change.
+
 const projectRoot = resolve(import.meta.dirname, '..')
 const distRoot = resolve(projectRoot, 'dist')
+const distAssets = resolve(distRoot, 'assets')
 const publishedAssets = resolve(projectRoot, 'assets')
 const preservedAssets = await Promise.all(['scholartube_new.png'].map(async (name) => ({
   name,
@@ -22,36 +30,14 @@ if (!cssPath || !scriptPath) {
   throw new Error('Could not locate the compiled CSS and JavaScript bundles.')
 }
 
-const css = await readFile(resolve(distRoot, 'assets', cssPath), 'utf8')
-const script = (await readFile(resolve(distRoot, 'assets', scriptPath), 'utf8'))
-  .replaceAll('</script', '<\\/script')
-const standaloneHtml = `<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ScholarTube is a curated, source-linked video knowledge index for researchers." />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="icon" href="./assets/scholartube-logo.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <title>ScholarTube — Research knowledge, in motion</title>
-    <style>${css}</style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script>${script}</script>
-  </body>
-</html>
-`
-
+// `dist/assets` already holds everything the page needs: the hashed bundles plus
+// the images Vite copied from `public/assets`.
 await rm(publishedAssets, { recursive: true, force: true })
 await mkdir(publishedAssets, { recursive: true })
-await cp(resolve(projectRoot, 'public', 'assets'), publishedAssets, { recursive: true })
+await cp(distAssets, publishedAssets, { recursive: true })
 for (const asset of preservedAssets) {
   if (asset.contents) await writeFile(resolve(publishedAssets, asset.name), asset.contents)
 }
-await writeFile(resolve(projectRoot, 'index.html'), standaloneHtml)
+await writeFile(resolve(projectRoot, 'index.html'), distHtml)
 
-console.log('Published a standalone index.html and its image assets to the project root.')
+console.log('Published index.html and its hashed bundles and image assets to the project root.')

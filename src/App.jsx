@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import resources from '../data/scholar_tube_resources.json'
+import { useEffect, useMemo, useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Library from './components/Library'
@@ -17,7 +16,6 @@ import { useLearningWorkspace } from './learning-workspace'
 // ST-001 (Karpathy on Lex Fridman) and ST-942 (Saining Xie marathon on 张小珺 Podcast)
 // keep flagship podcasts in the featured rotation alongside a talk, course, and interview.
 const FEATURED_IDS = ['ST-008', 'ST-001', 'ST-175', 'ST-083', 'ST-942']
-const featuredResources = FEATURED_IDS.map((id) => resources.find((resource) => resource.id === id)).filter(Boolean)
 
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(() => window.matchMedia(query).matches)
@@ -32,7 +30,13 @@ function useMediaQuery(query) {
   return matches
 }
 
-export default function App() {
+// The catalog arrives as a prop (see main.jsx) so this module, and the bundle it
+// is built into, does not change when only the catalog data is updated.
+export default function App({ resources }) {
+  const featuredResources = useMemo(
+    () => FEATURED_IDS.map((id) => resources.find((resource) => resource.id === id)).filter(Boolean),
+    [resources],
+  )
   const params = new URLSearchParams(window.location.search)
   const [query, setQuery] = useState(() => params.get('q') || '')
   const [format, setFormat] = useState(() => ['Interview', 'Podcast', 'Course', 'Talk'].includes(params.get('format')) ? params.get('format') : 'All')

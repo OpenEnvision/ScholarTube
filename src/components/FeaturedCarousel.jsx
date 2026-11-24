@@ -117,7 +117,7 @@ export default function FeaturedCarousel({ resources, totalCount }) {
         </div>
 
         <div className="featured-promo" aria-hidden={!isPromo}>
-          <img src="./assets/scholartube-featured-cover-v2.png" alt="" aria-hidden="true" />
+          <img src="./assets/scholartube-featured-cover-v2.webp" alt="" aria-hidden="true" />
           <span className="featured-promo__shade" aria-hidden="true" />
           <div className="featured-promo__copy">
             <Brand inverse />

@@ -161,7 +161,7 @@ Open the local URL printed by Vite, normally `http://127.0.0.1:5173/`.
 | Command | Purpose |
 | --- | --- |
 | `npm run dev` | Start the local development server |
-| `npm run build` | Build the Vite application and publish a self-contained root `index.html` |
+| `npm run build` | Build the Vite application and publish `index.html` and its hashed bundles to the repository root |
 | `npm run preview` | Preview the production build locally |
 | `npm run series:apply` | Recompute explicit course, talk, and interview series metadata |
 | `npm run taxonomy:apply` | Apply the evidence-backed section/focusArea corrections |
@@ -179,7 +179,7 @@ Run:
 npm run build
 ```
 
-The build produces both a conventional Vite bundle in `dist/` and a self-contained `index.html` at the repository root with its required images in `assets/`. The published site is currently available at:
+The build produces both a conventional Vite bundle in `dist/` and the published `index.html` at the repository root, with its content-hashed JavaScript and CSS bundles and required images in `assets/`. The published site is currently available at:
 
 ```text
 https://openenvision.github.io/ScholarTube/
